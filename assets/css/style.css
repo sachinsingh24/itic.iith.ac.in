@@ -3638,7 +3638,7 @@ Feedback Area CSS
   z-index: 1;
   overflow: hidden;
   margin-left: 45px;
-  background-color:wheat;
+  background-color: wheat;
   -webkit-box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
   box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
   padding: 30px 55px 30px 30px;
@@ -3648,8 +3648,8 @@ Feedback Area CSS
   margin-bottom: 0;
 }
 
-.p1{
-  min-height:243px;
+.p1 {
+  min-height: 243px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5439,14 +5439,43 @@ Page Title Area CSS
   bottom: 0;
   left: 0;
   opacity: .6;
-  height: 100%;
   z-index: -1;
-  -webkit-animation: animatedBackground 15s linear infinite;
-  animation: animatedBackground 15s linear infinite;
+  -webkit-animation: animatedBackground 10s linear infinite;
+  animation: animatedBackground 10s linear infinite;
   background-image: url(../../assets/img/bg_lines.svg);
   background-repeat: repeat;
-  background-position: center center;
   background-size: cover;
+  /* background-position: bottom center; */
+  }
+
+  @-webkit-keyframes animatedBackground {
+    0% {
+      /* background-position: center center; */
+      transform: translateY(100px, 1000px);
+
+
+    }
+
+    100% {
+      /* background-position: center center; */
+      transform: translateY(300px);
+
+    }
+  }
+
+  @keyframes animatedBackground {
+
+    0% {
+      transform: translateY(100px, 1000px);
+
+      /* background-position: center 3000px; */
+    }
+
+    100% {
+      transform: translateY(300px);
+
+      /* background-position: center center; */
+    }
 }
 
 .page-title-content {
@@ -5467,25 +5496,7 @@ Page Title Area CSS
   font-size: 24px;
 }
 
-@-webkit-keyframes animatedBackground {
-  0% {
-    background-position: center center;
-  }
 
-  100% {
-    background-position: 300px center;
-  }
-}
-
-@keyframes animatedBackground {
-  0% {
-    background-position: center center;
-  }
-
-  100% {
-    background-position: 300px center;
-  }
-}
 
 /*================================================
 404 Error Area CSS

@@ -5062,7 +5062,7 @@ Page Title Area CSS
         background: {
             image: url(../../assets/img/bg_lines.svg);
             repeat: repeat;
-            position: center center;
+            // position: center center;
             size: cover;
         };
     }
@@ -5088,10 +5088,12 @@ Page Title Area CSS
 }
 @keyframes animatedBackground {
 	0% {
-        background-position: center center;
+        // background-position: center center;
+              transform: translateY(100px, 1000px);
     }
 	100% {
-        background-position: 300px center;
+              transform: translateY(300px);
+        // background-position: 300px center;
     }
 }
 
