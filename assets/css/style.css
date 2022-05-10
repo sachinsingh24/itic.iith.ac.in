@@ -5422,11 +5422,11 @@ blockquote::after,
 Page Title Area CSS
 =================================================*/
 .page-title-area {
-  background-color: #ff612f;
   position: relative;
   z-index: 1;
   padding-top: 190px;
   padding-bottom: 120px;
+  background-image:url(../about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -5434,10 +5434,11 @@ Page Title Area CSS
 .page-title-area::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -2;
   right: 0;
   bottom: 0;
-  left: 0;
+  left:0;
+  height: 450px;
   opacity: .6;
   z-index: -1;
   -webkit-animation: animatedBackground 10s linear infinite;
@@ -5445,37 +5446,26 @@ Page Title Area CSS
   background-image: url(../../assets/img/bg_lines.svg);
   background-repeat: repeat;
   background-size: cover;
-  /* background-position: bottom center; */
   }
 
   @-webkit-keyframes animatedBackground {
-    0% {
-      /* background-position: center center; */
-      transform: translateY(100px, 1000px);
+   0% {
+     transform: translateY(100px);
+     }
 
-
-    }
-
-    100% {
-      /* background-position: center center; */
-      transform: translateY(300px);
-
-    }
+   100% {
+     transform: translateY(0);
+     }
   }
 
   @keyframes animatedBackground {
+   0% {
+     transform: translateY(100px);
+     }
 
-    0% {
-      transform: translateY(100px, 1000px);
-
-      /* background-position: center 3000px; */
-    }
-
-    100% {
-      transform: translateY(300px);
-
-      /* background-position: center center; */
-    }
+   100% {
+     transform: translateY(0);
+     }
 }
 
 .page-title-content {
