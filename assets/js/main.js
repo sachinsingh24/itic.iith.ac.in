@@ -46,6 +46,8 @@ jQuery(function ($) {
                     relX = e.pageX - parentOffset.left,
                     relY = e.pageY - parentOffset.top;
                 $(this).find('span').css({ top: relY, left: relX })
+                console.log(parentOffset, e.pageY, e.pageX);
+
             })
             .on('mouseout', function (e) {
                 var parentOffset = $(this).offset(),
@@ -61,6 +63,7 @@ jQuery(function ($) {
                     relX = e.pageX - parentOffset.left,
                     relY = e.pageY - parentOffset.top;
                 $(this).find('span').css({ top: relY, left: relX })
+
             })
             .on('mouseout', function (e) {
                 var parentOffset = $(this).offset(),
@@ -382,7 +385,7 @@ jQuery(function ($) {
     // WOW JS
     $(window).on('load', function () {
         if ($(".wow").length) {
-            var wow = new WOW({
+            var wow = new wow({
                 boxClass: 'wow',      // animated element css class (default is wow)
                 animateClass: 'animated', // animation css class (default is animated)
                 offset: 20,          // distance to the element when triggering the animation (default is 0)

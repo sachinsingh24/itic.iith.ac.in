@@ -1,6 +1,11 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
   /** Custom   **/
+
+
+  .max-width-1290{
+    max-width: fit-content;
+  }
 .single-feedback-item .feedback-desc{
   min-height: auto;
 }
@@ -2266,7 +2271,7 @@
     max-width: 1240px;
   }
   .strax-nav .navbar .navbar-nav {
-    margin-left: 70px;
+    margin-left: 70px !important;
   }
   .main-banner-content .content {
     max-width: 675px;

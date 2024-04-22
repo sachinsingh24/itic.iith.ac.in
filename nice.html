@@ -1,7 +1,18 @@
 <!doctype html>
 <html lang="zxx">
 
+
+
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SKS2MLM5Y0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SKS2MLM5Y0');
+</script>
 	<meta charset="utf-8"><!-- Required meta tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- Bootstrap Min CSS -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" /><!-- Animate Min CSS -->
@@ -18,6 +29,47 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+			.page-title-area::before {
+				content: '';
+				position: absolute;
+				top: -2;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				opacity: .6;
+				height: 450px;
+				z-index: -1;
+				-webkit-animation: animatedBackground 10s linear infinite;
+				animation: animatedBackground 10s linear infinite;
+				background-image: url(../../assets/img/bg_lines.svg);
+				background-repeat: repeat;
+				background-size: cover;
+			}
+
+			@-webkit-keyframes animatedBackground {
+				0% {
+					transform: translateY(100px);
+				}
+
+				100% {
+					transform: translateY(0);
+				}
+			}
+
+			@keyframes animatedBackground {
+				0% {
+					transform: translateY(100px);
+				}
+
+				100% {
+					transform: translateY(0);
+				}
+			}
+			.page-title-content h2 {
+			font-size: 45px;
+			}
+		</style>
 </head>
 
 <body>
@@ -35,101 +87,163 @@
 	</div>
 	<!-- End Preloader Area -->
 	<!-- Start Navbar Area -->
+        <div class="navbar-area bg-white">
+        <div class="strax-responsive-nav">
+            <div class="container">
+                <div class="strax-responsive-menu">
+                    <div class="logo">
+                        <a href="index.html"><img alt="logo" src="assets/img/logo.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="strax-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html"><img alt="logo" src="assets/img/logo.png" />
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">
+                                    <!--< Home --><i class='bx bx-home'></i></a> </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about-us.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="eeiith.html">Entrepreneurship Ecosystem at IITH</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Programs</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="nice.html">NICE</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="tihan.html">TiHAN</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="idex-dio.html">iDEX</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="nidhi-prayas.html">NIDHI PRAYAS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="meity-tide.html">Meity TIDE 2.0</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="aisea.html">AISEA</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="bel-seed-fund.html">BEL Seed Fund</a>
+                                    </li>
+                    <li class="nav-item">
+                                        <a class="nav-link" href="abcd2.html">ABCD2</a>
+                                    </li>
+                    <li class="nav-item">
+                                        <a class="nav-link" href="build.html">BUILD</a>
+                                    </li>                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">People</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="board.html">Board</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mentors.html">Mentors</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link" href="#">Coaches</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Network</a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="team.html">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="careers.html">Careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="startups.html">Startups</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Media</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="reports.html">Reports</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="downloads.html">Downloads</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
 
-	<div class="navbar-area bg-white">
-		<div class="strax-responsive-nav">
-			<div class="container">
-				<div class="strax-responsive-menu">
-					<div class="logo"><a href="index.html"><img alt="logo" src="assets/img/logo.png" /> </a></div>
-				</div>
-			</div>
-		</div>
+                        <div class="others-options">
+                            <a class="default-btn" href="apply.html" style="padding-left: 5px; padding-right: 5px;">
+                                Apply for Support <span></span></a>
+                        </div>
+                           <div class="others-options" style="width: 130px">
+                  <a
+                  href="summer-internship-2024.html"
+                  class="default-btn"
+                  style="padding-left: 5px; padding-right: 5px; margin: auto;background-color: #ff612f;">
+                  Internship 2024
+                  <span></span>
+                </a>
+              </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-		<div class="strax-nav">
-			<div class="container">
-				<nav class="navbar navbar-expand-md navbar-light"><a class="navbar-brand" href="index.html"><img
-							alt="logo" src="assets/img/logo.png" /> </a>
+        <div class="others-option-for-responsive">
+            <div class="container">
+                <div class="dot-menu">
+                    <div class="inner">
+                        <div class="circle circle-one"></div>
 
-					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a href="index.html" class="nav-link">
-									<!--< Home --><i class='bx bx-home'></i></a> </li>
-							<li class="nav-item"><a class="nav-link" href="#">About</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-									<li class="nav-item"><a class="nav-link" href="eeiith.html">Entrepreneurship
-											Ecosystem at IITH</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link active" href="#">Programs</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link active" href="nice.html">NICE</a></li>
-									<li class="nav-item"><a class="nav-link" href="tihan.html">TiHAN</a></li>
-									<li class="nav-item"><a class="nav-link" href="idex-dio.html">iDEX-DIO</a></li>
-									<li class="nav-item"><a class="nav-link" href="nidhi-prayas.html">NIDHI PRAYAS</a>
-									</li>
-									<li class="nav-item"><a class="nav-link" href="meity-tide.html">Meity TIDE 2.0</a>
-									</li>
-									<li class="nav-item"><a class="nav-link" href="aisea.html">AISEA</a></li>
-									<li class="nav-item"><a class="nav-link" href="bel-seed-fund.html">BEL Seed Fund</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="#">People</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="board.html">Board</a></li>
-									<li class="nav-item"><a class="nav-link" href="mentors.html">Mentors</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Coaches</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Network</a></li>
-									<li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-									<li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="startups.html">Startups</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Media</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="reports.html">Reports</a></li>
-									<li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-						</ul>
+                        <div class="circle circle-two"></div>
 
-						<div class="others-options"><a class="default-btn" href="apply.html"
-								style="padding-left:25px;">Apply for support</a></div>
-					</div>
-				</nav>
-			</div>
-		</div>
+                        <div class="circle circle-three"></div>
+                    </div>
+                </div>
 
-		<div class="others-option-for-responsive">
-			<div class="container">
-				<div class="dot-menu">
-					<div class="inner">
-						<div class="circle circle-one"></div>
+                <div class="container">
+                    <div class="option-inner">
+                        <div class="others-options justify-content-center   ">
 
-						<div class="circle circle-two"></div>
 
-						<div class="circle circle-three"></div>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="option-inner">
-						<div class="others-options"><a class="default-btn" href="contact-us.html"
-								style="padding-left:25px;">Get Started </a> <a class="optional-btn" href="log-in.html">
-								Log In </a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                                <a class="optional-btn" href="http://itic.iith.ac.in/apply.html"
+                                    style="padding-left: 25px">Apply for Support</a>
+                             <a class="optional-btn" href="summer-internship-2024.html"
+                                style="padding-left: 25px">Internship 2024
+                            </a>
+              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!-- End Navbar Area -->
 	<!-- Start Page Title Area -->
 
 	<div class="page-title-area"
-		style="background-image:url(assets/programs.jpg) !important;background-position: bottom;">
+		style="background-image:url(assets/Banner-img/NICE.jpg) !important;background-position: bottom;">
 		<div class="container">
 			<div class="page-title-content">
 				<h2>NICE</h2>
@@ -146,7 +260,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-12 col-md-16">
 					<div class="about-content">
-						<p>NMDC Innovation and Incubation Centre (NICE) is a state of the art incubation centre for
+						<p> <span style="font-weight: 600;">NMDC Innovation and Incubation Centre (NICE)</span> is a state of the art incubation centre for
 							deeptech start-ups, providing fellowship and incubation support under the iTIC Incubator in
 							collaboration with NMDC at IIT Hyderabad.
 							<br />
@@ -203,7 +317,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-16">
                     <div class="about-content">
-                        <p>Timeline/Important dates 
+                        <p>Timeline/Important dates
 
 </p>Call for application deadlines, shortlisting, onboarding, tenure, etc
                     </div>
@@ -317,7 +431,7 @@
 		</section>
 	</div>
 
-	<section class="partner-area pt-70 pb-70 bg-f8fbfa">
+	<section class="partner-area pt-30 pb-70 bg-f8fbfa">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-3 col-md-12">
@@ -329,28 +443,27 @@
 				<div class="col-lg-9 col-md-12">
 					<div class="owl-carousel owl-theme owl-loaded owl-drag">
 						<div class="owl-stage-outer">
-							<div class="owl-stage d-flex justify-content-center">
-								<div class="owl-item cloned" style="width: 200px; margin-right: 30px;">
-									<div class="single-partner-item"><img style="height: 100px; width: 200px;"
-											src="assets/logos/grant-and-funding-agencies/IITH-logo.png"
-											title="IIT Hyderabad" /></div>
+							<div class="owl-stage">
+								<div class="owl-item cloned" style="width: 200px; margin-right: 50px;">
+									<div class="single-partner-item"><img
+											src="assets/logos/grant-and-funding-agencies/IITH-logo.png" title="IIT Hyderabad" />
+									</div>
 								</div>
 
-								<div class="owl-item cloned" style="width: 200px; margin-right: 30px;">
-									<div class="single-partner-item"><img
+								<div class="owl-item cloned" style="width: 200px; margin-right: 50px;">
+									<div class="single-partner-item"><img style="height: 90px; width: 180px;"
 											src="assets/logos/grant-and-funding-agencies/NMDC-Logo-New.png"
 											title="MMDC" /></div>
 								</div>
-								<div class="owl-item cloned" style="width: 200px; margin-right: 30px;">
-									<div class="single-partner-item"><img style="height: 150px; width: 200px;"
-											src="assets/logos/grant-and-funding-agencies/NIce-Final-white.png"
-											title="NICE" /></div>
+								<div class="owl-item cloned" style="width: 200px; margin-right: 50px;">
+									<div class="single-partner-item"><img style="height: 80px; width: 160px;"
+											src="assets/logos/grant-and-funding-agencies/NIce-Final-white.png" title="NICE" /></div>
 								</div>
 							</div>
 						</div>
-						<div class="owl-nav disabled"><button class="owl-prev" role="presentation"
-								type="button"></button><button class="owl-next" role="presentation"
-								type="button"></button></div>
+
+						<div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"></button><button
+								class="owl-next" role="presentation" type="button"></button></div>
 
 						<div class="owl-dots disabled"></div>
 					</div>
@@ -359,7 +472,7 @@
 		</div>
 	</section>
 
-	<section>
+	<!-- <section>
 		<div class="container">
 			<div class="col-12">
 				<div class="single-footer-widget portfolio-footer" style="position: relative; z-index: 2;">
@@ -372,7 +485,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- Start Free Trial Area -->
 
 	<section class="free-trial-area ptb-100 bg-f8fbfa">
@@ -387,118 +500,129 @@
 	<!-- End Free Trial Area -->
 	<!-- Start Footer Area -->
 
-	<footer class="footer-area">
-		<div class="divider"></div>
+  <footer class="footer-area">
+  	<div class="divider"></div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-5 col-sm-5">
-					<div class="single-footer-widget" style="margin-right:130px">
-						<div class="logo"><a href="index.html"><img alt="image" src="assets/img/white-logo.png" /></a>
-						</div>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-4 col-md-5 col-sm-5">
+  				<div class="single-footer-widget" style="margin-right: 130px">
+  					<div class="logo">
+  						<a href="index"><img alt="image" src="assets/img/white-logo.png" /></a>
+  					</div>
 
-						<p>iTIC Incubator at IIT Hyderabad focuses on supporting deeptech startups from idea to growth
-							stage under its structured pre-incubation, incubation and accelerator programs.</p>
+  					<p>
+  						iTIC Incubator at IIT Hyderabad focuses on supporting deeptech
+  						startups from idea to growth stage under its structured
+  						pre-incubation, incubation and accelerator programs.
+  					</p>
 
-						<div class="logo">
-							<img alt="image" src="assets/logos/grant-and-funding-agencies/footer brand logo.png" />
-						</div>
-					</div>
-				</div>
+  					<div class="logo">
+  						<img alt="image" src="assets/logos/grant-and-funding-agencies/footer brand logo.png" />
+  					</div>
+  				</div>
+  			</div>
 
-				<div class="col-lg-2 col-md-5 col-sm-5">
-					<div class="single-footer-widget">
-						<h3>Main Links</h3>
+  			<div class="col-lg-2 col-md-5 col-sm-5">
+  				<div class="single-footer-widget">
+  					<h3>Main Links</h3>
 
-						<ul class="services-list">
-							<li><a href="about-us.html">About Us</a></li>
-							<li><a href="eeiith.html">Entrepreneurship Ecosystem at IITH</a></li>
-							<li><a href="startups.html">Startups</a></li>
-							<li><a href="contact-us.html">Contact Details</a></li>
-							<li><a href="contact-us.html">Book a Meeting</a></li>
-						</ul>
-					</div>
-				</div>
+  					<ul class="services-list">
+  						<li><a href="about-us.html">About Us</a></li>
+  						<li>
+  							<a href="eeiith.html">Entrepreneurship Ecosystem at IITH</a>
+  						</li>
+  						<li><a href="startups.html">Startups</a></li>
+  						<li><a href="contact-us.html">Contact Details</a></li>
+  						<li><a href="contact-us.html">Book a Meeting</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="col-lg-2 col-md-5 col-sm-5 me-n1">
+  				<div class="single-footer-widget">
+  					<h3>People</h3>
 
-				<div class="col-lg-2 col-md-5 col-sm-5">
-					<div class="single-footer-widget">
-						<h3>People</h3>
+  					<ul class="services-list">
+  						<li><a href="board.html">Board</a></li>
+  						<li><a href="mentors.html">Mentors</a></li>
+  						<!-- <li><a href="coaches.html">Coaches</a></li> -->
+  						<!-- <li><a href="network.html">Network</a></li> -->
+  						<li><a href="team.html">Team</a></li>
+  						<li><a href="careers.html">Careers</a></li>
+  					</ul>
+  				</div>
+  			</div>
 
-						<ul class="services-list">
-							<li><a href="board.html">Board</a></li>
-							<li><a href="mentors.html">Mentors</a></li>
-							<li><a href="coaches.html">Coaches</a></li>
-							<li><a href="network.html">Network</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="careers.html">Careers</a></li>
-						</ul>
-					</div>
-				</div>
+  			<div class="col-lg-2 col-md-5 col-sm-5">
+  				<div class="single-footer-widget">
+  					<h3>Programs</h3>
 
-				<div class="col-lg-2 col-md-5 col-sm-5">
-					<div class="single-footer-widget">
-						<h3>Programs</h3>
+  					<ul class="support-list">
+  						<li><a href="nice.html">NICE</a></li>
+  						<li><a href="tihan.html">TiHAN</a></li>
+  						<li><a href="idex-dio.html">iDEX</a></li>
+  						<li><a href="nidhi-prayas.html">NIDHI PRAYAS</a></li>
+  						<li><a href="meity-tide.html">Meity TIDE 2.0</a></li>
+  						<li><a href="aisea.html">AISEA</a></li>
+  						<li><a href="bel-seed-fund.html">BEL Seed Fund</a></li>
+  					</ul>
+  				</div>
+  			</div>
 
-						<ul class="support-list">
-							<li><a href="nice.html">NICE</a></li>
-							<li><a href="tihan.html">TiHAN</a></li>
-							<li><a href="idex-dio.html">iDEX-DIO</a></li>
-							<li><a href="nidhi-prayas.html">NIDHI PRAYAS</a></li>
-							<li><a href="meity-tide.html">Meity TIDE 2.0</a></li>
-							<li><a href="aisea.html">AISEA</a></li>
-							<li><a href="bel-seed-fund.html">BEL Seed Fund</a></li>
-						</ul>
-					</div>
-				</div>
+  			<div class="col-lg-2 col-md-5 col-sm-5">
+  				<div class="single-footer-widget">
+  					<h3>Media</h3>
 
-				<div class="col-lg-2 col-md-5 col-sm-5">
-					<div class="single-footer-widget">
-						<h3>Media</h3>
+  					<ul class="support-list">
+  						<!-- <li><a href="videos.html">Videos</a></li> -->
+  						<!-- <li><a href="gallery.html">Gallery</a></li> -->
+  						<li><a href="newsletter.html">Newsletter</a></li>
+  						<li><a href="reports.html">Reports</a></li>
+  						<!-- <li><a href="press-newsroom.html">Press / Newsroom</a></li> -->
+  						<!--<li><a href="brandkit ">Brandkit</a></li>-->
+  						<!-- <li><a href="blog.html">Blog</a></li> -->
+  						<li><a href="downloads.html">Downloads</a></li>
+  						<li><a href="privacy-policy.html">Privacy Policy</a></li>
+  					</ul>
+  				</div>
+  			</div>
 
-						<ul class="support-list">
-							<li><a href="videos.html">Videos</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="newsletter.html">Newsletter</a></li>
-							<li><a href="reports.html">Reports</a></li>
-							<li><a href="press-newsroom.html">Press / Newsroom</a></li>
-							<!--<li><a href="brandkit.html">Brandkit</a></li>-->
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="downloads.html">Downloads</a></li>
-							<li><a href="privacy-policy.html">Privacy Policy</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
 
-			<div align="center" class="col-lg-12 col-md-6 col-sm-6">
-				<div>
-					<ul class="footer-contact-info">
-						<li style="color:#acc5db; list-style:none;"> <i class="fa-solid fa-house-chimney"></i>&nbsp;
-							607, Academic Block-C IIT
-							Hyderabad, Kandi, Sangareddy, Telangana, India - 502284<br />
-							Email: <a href="mailto:contact@itic.iith.ac.in">contact@itic.iith.ac.in</a> | Landline <a
-								href="tel:+914023016169">+91 40 2301 6169</a> | Mobile: <a href="tel:+919398323668">+91
-								93983 23668</a> <br />
-							<a class="fs-1 px-2" href="https://www.instagram.com/iTICIncubator" target="_blank"><i
-									class="fa-brands fa-instagram"></i></a>
-							<a class="fs-1 px-2" href="https://www.facebook.com/iTICIncubator" target="_blank"><i
-									class="fa-brands fa-facebook-square"></i></a>
-							<a class="fs-1 px-2" href="https://www.linkedin.com/company/iTICIncubator"
-								target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-							<a class="fs-1 px-2" href="https://twitter.com/iTICIncubator" target="_blank"><i
-									class="fa-brands fa-twitter-square"></i></a></li>
-					</ul>
-				</div>
-			</div>
+  		</div>
 
-			<div class="copyright-area">
-				<p>Copyright @2022 iTIC Incubator</p>
-			</div>
-		</div>
-	</footer>
+  		<div align="center" class="col-lg-12 col-md-6 col-sm-6">
+  			<div>
+  				<ul class="footer-contact-info">
+  					<li style="color: #acc5db ; list-style:none;">
+  						<i class="fa-solid fa-house-chimney"></i>&nbsp; Address: Technology Innovation Park, IIT HYDERABAD, Kandi, Sangareddy , Telangana India- 502284<br />
+  						<i class="fa-solid fa-envelope"></i>&nbsp;
+  						Email:
+  						<a href="mailto:contact@itic.iith.ac.in">contact@itic.iith.ac.in</a>&nbsp;
+  						<i class="fa-solid fa-phone"></i> Landline <a href="tel:+914023016169">+91 40 2301 6169</a>
+  						<!-- &nbsp;<i class="fa-solid fa-mobile-screen-button"></i> Mobile: <a href="tel:+919398323668">+91
+  							93983
+  							23668</a> -->
+  						<br />
+  						<a class="px-1" style="font-size: 33px;" href="https://www.instagram.com/iTICIncubator"
+  							target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  						<a class="px-1" style="font-size: 33px;" href="https://www.facebook.com/iTICIncubator"
+  							target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+  						<a class="px-1" style="font-size: 33px;" href="https://www.linkedin.com/company/iTICIncubator"
+  							target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  						<a class="px-1" style="font-size: 33px;" href="https://twitter.com/iTICIncubator"
+  							target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="copyright-area mt-1 p-3">
+  			<p>Copyright @<span id="year"></span> iTIC Incubator</p>
+  		</div>
+  	</div>
+  </footer>
 	<!-- End Footer Area -->
 
-	<div class="go-top"></div>
+	<div class="go-top"><i class='bx bx-chevron-up'></i></div>
 	<!-- jQuery Min JS -->
 	<script src="assets/js/jquery.min.js"></script><!-- Popper Min JS -->
 	<script src="assets/js/popper.min.js"></script><!-- Bootstrap Min JS -->

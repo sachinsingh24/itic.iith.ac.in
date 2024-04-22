@@ -250,6 +250,7 @@ p:last-child {
   padding-right: 25px;
   padding-top: 13px;
   padding-bottom: 13px;
+
 }
 
 .default-btn i {
@@ -271,8 +272,10 @@ p:last-child {
   height: 0;
   border-radius: 50%;
   background-color: #f9a33f;
-  -webkit-transition: width 0.6s ease-in-out, height 0.5s ease-in-out;
-  transition: width 0.6s ease-in-out, height 0.5s ease-in-out;
+  -webkit-transition: width 0.6s ease-in-out,
+    height 0.5s ease-in-out;
+  transition: width 0.6s ease-in-out,
+    height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -3648,13 +3651,13 @@ Feedback Area CSS
   margin-bottom: 0;
 }
 
-.p1 {
-  min-height: 243px;
+/* .single-feedback-item .feedback-desc .p1{
+  min-height:243px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-}
+} */
 .single-feedback-item .feedback-desc .rating {
   margin-top: 13px;
   margin-bottom: 15px;
@@ -5422,51 +5425,31 @@ blockquote::after,
 Page Title Area CSS
 =================================================*/
 .page-title-area {
+  background-color: #ff612f;
   position: relative;
   z-index: 1;
   padding-top: 190px;
   padding-bottom: 120px;
-  background-image:url(../about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.page-title-area::before {
+/* .page-title-area::before {
   content: '';
   position: absolute;
   top: -2;
   right: 0;
   bottom: 0;
-  left:0;
-  height: 450px;
+  left: 0;
   opacity: .6;
+  height: 450px;
   z-index: -1;
   -webkit-animation: animatedBackground 10s linear infinite;
   animation: animatedBackground 10s linear infinite;
   background-image: url(../../assets/img/bg_lines.svg);
   background-repeat: repeat;
   background-size: cover;
-  }
-
-  @-webkit-keyframes animatedBackground {
-   0% {
-     transform: translateY(100px);
-     }
-
-   100% {
-     transform: translateY(0);
-     }
-  }
-
-  @keyframes animatedBackground {
-   0% {
-     transform: translateY(100px);
-     }
-
-   100% {
-     transform: translateY(0);
-     }
-}
+} */
 
 .page-title-content {
   text-align: center;
@@ -5486,7 +5469,25 @@ Page Title Area CSS
   font-size: 24px;
 }
 
+/* @-webkit-keyframes animatedBackground {
+  0% {
+transform: translateY(100px);
+  }
 
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animatedBackground {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+} */
 
 /*================================================
 404 Error Area CSS
@@ -7004,7 +7005,7 @@ Footer Area CSS
 .copyright-area {
   border-top: 1px solid #1c2250;
   text-align: center;
-  margin-top: 50px;
+  margin-top: auto;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -7177,7 +7178,6 @@ SaaS Home Page CSS
   color: #ffffff;
   font-size: 52px;
   font-weight: 600;
-  margin: 0;
 }
 
 .saas-banner .hero-content p {
@@ -8386,11 +8386,11 @@ New Custom CSS Responsive
   margin-top: 15px;
   margin-right: 8px;
   display: inline-block;
-  padding: 0.5rem 0.7rem;
+  padding: 0.7rem 0.7rem;
   border-radius: 10rem;
   color: #fff;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.15rem;
   transition: all 0.3s;
   position: relative;
