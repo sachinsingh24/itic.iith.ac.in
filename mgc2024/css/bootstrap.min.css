@@ -10019,7 +10019,7 @@ a.text-dark:hover {
         transform: rotate(90deg);
         position: relative;
         top: 177px;
-        left: 23px;
+        /* left: 23px; */
         width: 100%;
         z-index: -1;
     }

@@ -4,5 +4,5 @@
     "editor.formatOnType": true,
     "editor.formatOnSaveMode": "modifications",
     "files.trimTrailingWhitespace": true,
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5502
 }

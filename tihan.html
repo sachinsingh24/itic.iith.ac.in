@@ -2,18 +2,20 @@
 
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SKS2MLM5Y0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SKS2MLM5Y0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SKS2MLM5Y0');
-</script>
+      gtag('config', 'G-SKS2MLM5Y0');
+    </script>
     <meta charset="utf-8" />
     <!-- Required meta tags -->
     <meta
@@ -158,7 +160,7 @@
                       <a class="nav-link" href="nice.html">NICE</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="tihan.html">TiHAN</a>
+                      <a class="nav-link active" href="tihan.html">TiHAN</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="idex-dio.html">iDEX</a>
@@ -176,15 +178,12 @@
                     <li class="nav-item">
                       <a class="nav-link" href="aisea.html">AISEA</a>
                     </li>
+                                                            <li class="nav-item">
+                      <a class="nav-link" href="build.html">BUILD</a>
+                    </li>
                     <li class="nav-item">
-                                        <a class="nav-link" href="bel-seed-fund.html">BEL Seed Fund</a>
-                                    </li>
-                    <li class="nav-item">
-                                        <a class="nav-link" href="abcd2.html">ABCD2</a>
-                                    </li>
-                    <li class="nav-item">
-                                        <a class="nav-link" href="build.html">BUILD</a>
-                                    </li>
+                      <a class="nav-link" href="SISFS.html">SISFS</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -229,7 +228,7 @@
                 </li>
               </ul>
 
-             <div class="others-options">
+              <div class="others-options">
                 <a
                   class="default-btn"
                   href="apply.html"
@@ -237,16 +236,15 @@
                   Apply for Support <span></span
                 ></a>
               </div>
-                <div class="others-options" style="width: 130px">
-                  <a
-                  href="summer-internship-2024.html"
+              <!-- <div class="others-options" style="width: 130px">
+                   <a
+                  href="id24.html"
                   class="default-btn"
-                  style="padding-left: 5px; padding-right: 5px; margin: auto;background-color: #ff612f;">
-                  Internship 2024
+                  style="padding-left: 5px; padding-right: 5px; margin: auto;background-color: #ff612f;text-wrap: nowrap;">
+                  Innovation-2024
                   <span></span>
                 </a>
-              </div>
-
+              </div> -->
             </div>
           </nav>
         </div>
@@ -267,17 +265,15 @@
           <div class="container">
             <div class="option-inner">
               <div class="others-options justify-content-center">
-
                 <a
                   class="optional-btn"
                   href="http://itic.iith.ac.in/apply.html"
                   style="padding-left: 25px"
                   >Apply for Support</a
                 >
-                 <a class="optional-btn" href="summer-internship-2024.html"
-                                style="padding-left: 25px">Internship 2024
-                            </a>
-              </div>
+                <!-- <a class="optional-btn" href="id24.html"
+                                style="padding-left: 25px">Innovation-2024
+                            </a> -->
               </div>
             </div>
           </div>
@@ -505,19 +501,6 @@
         </div>
       </div>
       <!-- End About Area -->
-      <!--<section class="about-area pt-70 pb-70">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12 col-md-16">
-                    <div class="about-content">
-                        <p>Results</p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>-->
 
       <section class="faq-area ptb-30">
         <div class="container">
@@ -576,12 +559,37 @@
           </div>
         </div>
       </section>
+      <section class="about-area pt-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12 col-md-16">
+              <div class="about-content">
+                <h5>Download Policies :</h5>
+                <a
+                  class="default-btn"
+                  href="downloads/TiHAN Incubation _ Policy Document.pdf"
+                  style="padding-left: 25px"
+                  target="_blank"
+                  >TiHAN INCUBATION
+                </a>
+                <a
+                  class="default-btn mx-2"
+                  href="downloads/TiHAN PRAYAS_EIR _ Policy Document.pdf"
+                  style="padding-left: 25px"
+                  target="_blank"
+                  >TiHAN PRAYAS_EIR
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section class="partner-area pt-30 pb-30 bg-f8fbfa">
+      <section class="partner-area pt-30 pb-70 bg-f8fbfa">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-3 col-md-12">
-              <div class="partner-title pb-5">
+              <div class="partner-title">
                 <h3>Partners, Patrons and Promoters:</h3>
               </div>
             </div>
@@ -596,22 +604,24 @@
                       <div class="single-partner-item">
                         <img
                           src="assets/logos/grant-and-funding-agencies/IITH-logo.png"
+                          style="width: auto; height: auto"
                           title="IIT Hyderabad" />
                       </div>
                     </div>
 
                     <div
-                      class="owl-item cloned mt-2"
+                      class="owl-item cloned"
                       style="width: 200px; margin-right: 50px">
                       <div class="single-partner-item">
                         <img
                           alt="DST"
+                           style="width: auto; height: auto"
                           src="assets/logos/grant-and-funding-agencies/department of science & technology.png" />
                       </div>
                     </div>
                     <div
                       class="owl-item cloned"
-                      style="width: 200px; margin-right: 50px">
+                      style="width: 200px;margin: auto 0; margin-right: 50px">
                       <div class="single-partner-item">
                         <img
                           alt="TiHAN"
@@ -730,7 +740,6 @@
                 <li><a href="nidhi-prayas.html">NIDHI PRAYAS</a></li>
                 <li><a href="meity-tide.html">Meity TIDE 2.0</a></li>
                 <li><a href="aisea.html">AISEA</a></li>
-                <li><a href="bel-seed-fund.html">BEL Seed Fund</a></li>
               </ul>
             </div>
           </div>
@@ -758,12 +767,14 @@
           <div>
             <ul class="footer-contact-info">
               <li style="color: #acc5db; list-style: none">
-                <i class="fa-solid fa-house-chimney"></i>&nbsp; Address: Technology Innovation Park, IIT HYDERABAD, Kandi, Sangareddy , Telangana India- 502284<br />
+                <i class="fa-solid fa-house-chimney"></i>&nbsp; Address:
+                Technology Innovation Park, IIT HYDERABAD, Kandi, Sangareddy ,
+                Telangana India- 502284<br />
                 <i class="fa-solid fa-envelope"></i>&nbsp; Email:
                 <a href="mailto:contact@itic.iith.ac.in"
                   >contact@itic.iith.ac.in</a
-                >&nbsp; <i class="fa-solid fa-phone"></i> Landline
-                <a href="tel:+914023016169">+91 40 2301 6169</a>
+                > <!-- &nbsp; <i class="fa-solid fa-phone"></i> Landline
+                <a href="tel:+914023016169">+91 40 2301 6169</a> -->
                 <!-- &nbsp;<i
                   class="fa-solid fa-mobile-screen-button"></i>
                 Mobile: <a href="tel:+919398323668">+91 93983 23668</a>  -->
@@ -840,11 +851,11 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script>
-        // Get the current year
-        var currentYear = new Date().getFullYear();
+      // Get the current year
+      var currentYear = new Date().getFullYear();
 
-        // Display the year in the span element
-        document.getElementById("year").textContent = currentYear;
+      // Display the year in the span element
+      document.getElementById('year').textContent = currentYear;
     </script>
   </body>
   <grammarly-desktop-integration
