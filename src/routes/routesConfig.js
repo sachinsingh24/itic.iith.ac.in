@@ -1,0 +1,53 @@
+import { lazy } from 'react';
+
+const Home = lazy(() => import('../pages/Home/Home'));
+const AboutUs = lazy(() => import('../pages/AboutUs/AboutUs'));
+const Eeiith = lazy(() => import('../pages/Eeiith/Eeiith'));
+const Nice = lazy(() => import('../pages/Nice/Nice'));
+const Tihan = lazy(() => import('../pages/Tihan/Tihan'));
+const IdexDio = lazy(() => import('../pages/IdexDio/IdexDio'));
+const NidhiPrayas = lazy(() => import('../pages/NidhiPrayas/NidhiPrayas'));
+const MeityTide = lazy(() => import('../pages/MeityTide/MeityTide'));
+const Aisea = lazy(() => import('../pages/Aisea/Aisea'));
+const Build = lazy(() => import('../pages/Build/Build'));
+const Sisfs = lazy(() => import('../pages/Sisfs/Sisfs'));
+const Board = lazy(() => import('../pages/Board/Board'));
+const Mentors = lazy(() => import('../pages/Mentors/Mentors'));
+const Team = lazy(() => import('../pages/Team/Team'));
+const Careers = lazy(() => import('../pages/Careers/Careers'));
+const Startups = lazy(() => import('../pages/Startups/Startups'));
+const StartupDetail = lazy(() => import('../pages/StartupDetail/StartupDetail'));
+const Reports = lazy(() => import('../pages/Reports/Reports'));
+const Downloads = lazy(() => import('../pages/Downloads/Downloads'));
+const ContactUs = lazy(() => import('../pages/ContactUs/ContactUs'));
+const Apply = lazy(() => import('../pages/Apply/Apply'));
+const Newsletter = lazy(() => import('../pages/Newsletter/Newsletter'));
+const PrivacyPolicy = lazy(() => import('../pages/PrivacyPolicy/PrivacyPolicy'));
+const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
+
+export const routes = [
+  { path: '/', element: Home },
+  { path: '/about-us', element: AboutUs },
+  { path: '/eeiith', element: Eeiith },
+  { path: '/nice', element: Nice },
+  { path: '/tihan', element: Tihan },
+  { path: '/idex-dio', element: IdexDio },
+  { path: '/nidhi-prayas', element: NidhiPrayas },
+  { path: '/meity-tide', element: MeityTide },
+  { path: '/aisea', element: Aisea },
+  { path: '/build', element: Build },
+  { path: '/sisfs', element: Sisfs },
+  { path: '/board', element: Board },
+  { path: '/mentors', element: Mentors },
+  { path: '/team', element: Team },
+  { path: '/careers', element: Careers },
+  { path: '/startups', element: Startups },
+  { path: '/startup/:slug', element: StartupDetail },
+  { path: '/reports', element: Reports },
+  { path: '/downloads', element: Downloads },
+  { path: '/contact-us', element: ContactUs },
+  { path: '/apply', element: Apply },
+  { path: '/newsletter', element: Newsletter },
+  { path: '/privacy-policy', element: PrivacyPolicy },
+  { path: '*', element: NotFound },
+];
