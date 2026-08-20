@@ -226,7 +226,7 @@ const Tihan = () => {
                     TiHAN INCUBATION
                   </a>
                   <a
-                    className="default-btn mx-2"
+                    className="default-btn"
                     href={_asset2}
                     style={{ paddingLeft: '25px' }}
                     target="_blank"

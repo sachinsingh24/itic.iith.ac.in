@@ -1,7 +1,6 @@
 import _asset0 from '../assets/img/logo.png';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import styles from './Navbar.module.css';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -62,13 +61,13 @@ const Navbar = () => {
             </div>
             <button
               type="button"
-              className={styles.mobileToggle}
+              className="mobile-toggle"
               aria-label="Toggle navigation"
               onClick={() => setMobileOpen((v) => !v)}
             >
               {mobileOpen ? (
                 <svg
-                  className={styles.meanClose}
+                  className="mean-close"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -101,7 +100,7 @@ const Navbar = () => {
               <img alt="logo" src={_asset0} />
             </Link>
             <div
-              className={`collapse navbar-collapse mean-menu ${mobileOpen ? styles.show : ''}`}
+              className="collapse navbar-collapse mean-menu"
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav">

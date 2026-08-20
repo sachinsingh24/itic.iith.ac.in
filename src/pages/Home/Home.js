@@ -279,7 +279,7 @@ const Home = () => {
           </div>
           <div className="row">
             {facilities.map((f, i) => (
-              <div className="col-lg-3 col-sm-6" key={i}>
+              <div className="col-lg-3 col-6" key={i}>
                 <div className={i === 0 ? "features-box value-iTIC" : "features-box"}>
                   <div className="icon">
                     <img alt={f.title} src={f.img} />
@@ -302,7 +302,7 @@ const Home = () => {
           </div>
           <div className="row">
             {focusAreas.map((f, i) => (
-              <div className="col-lg-3 col-sm-6" key={i}>
+              <div className="col-lg-3 col-6" key={i}>
                 <div className="features-box value-iTIC">
                   <div className="icon">
                     <img alt={f.title} src={f.img} />
@@ -326,7 +326,7 @@ const Home = () => {
             renderItem={(t) => (
               <div className="single-feedback-item">
                 <div className="feedback-desc bg-white">
-                  <div className="p1" style={{ minHeight: "243px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                  <div className="p1">
                     <p>{t.quote}</p>
                   </div>
                   <hr />

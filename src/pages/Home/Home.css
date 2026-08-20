@@ -113,6 +113,15 @@
   padding: 25px 0;
   border-radius: 5px;
 }
+.funfacts-inner .row > div {
+  display: flex;
+}
+.funfacts-inner .single-funfacts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .funfact-style-two i {
   font-size: 30px;
   color: #f9a33f;
@@ -522,10 +531,6 @@
   .single-feedback-item .feedback-desc {
     min-height: auto;
     margin-left: 0;
-  }
-  .funfacts-inner {
-    max-width: 720px;
-    margin-top: 80px;
   }
   .single-feedback-item .feedback-desc .client-info h3 {
     font-size: 17px;
@@ -1303,6 +1308,28 @@ p {
   max-width: var(--slide-step);
   padding: 0 var(--slide-pad);
   box-sizing: border-box;
+}
+
+.feedback-slides .owl-item {
+  display: flex;
+}
+
+.feedback-slides .single-feedback-item {
+  display: flex;
+  flex: 1;
+}
+
+.feedback-slides .single-feedback-item .feedback-desc {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.feedback-slides .single-feedback-item .feedback-desc .p1 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-gallery-slides .owl-dots,

@@ -124,6 +124,9 @@
 .strax-responsive-nav {
   display: none;
 }
+.mobile-toggle {
+  display: none;
+}
 .navbar-area.is-sticky {
   position: fixed;
   top: 0;
@@ -470,6 +473,33 @@
   }
   .strax-responsive-nav .dot-menu:hover .inner .circle {
     background-color: #f9a33f;
+  }
+  .strax-responsive-nav .mobile-toggle {
+    display: block;
+    border: 0;
+    background: transparent;
+    width: 35px;
+    height: 30px;
+    position: relative;
+    z-index: 5;
+  }
+  .strax-responsive-nav .mobile-toggle span {
+    display: block;
+    height: 4px;
+    background: #ee4132;
+    margin-top: 3px;
+    border-radius: 3px;
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .strax-responsive-nav .mobile-toggle .mean-close {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   .navbar-area.is-sticky {
     padding-top: 15px;
@@ -1254,8 +1284,9 @@ p {
     font-size: 14px;
     font-weight: 500;
   }
-  .strax-nav.menu-open .navbar-nav > .nav-item > .nav-link.active {
-    color: #000000;
+  .strax-nav.menu-open .navbar-nav > .nav-item > .nav-link.active,
+  .strax-nav.menu-open .navbar-nav > .nav-item.active > .nav-link {
+    color: #f9a33f;
   }
   .strax-nav.menu-open .mean-expand-btn {
     display: block;
@@ -1304,6 +1335,6 @@ p {
     font-weight: 500;
   }
   .strax-nav.menu-open .navbar-nav .nav-item .dropdown-menu li a.active {
-    color: #000000;
+    color: #f9a33f;
   }
 }

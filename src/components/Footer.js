@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="divider"></div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-5 col-sm-5">
-            <div className="single-footer-widget" style={{ marginRight: '130px' }}>
+          <div className="col-lg-4 col-md-5 col-12">
+            <div className="single-footer-widget footer-about">
               <div className="logo">
                 <Link to="/">
                   <img alt="" src={_asset0} />
@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-5 col-sm-5">
+          <div className="col-lg-2 col-md-5 col-6">
             <div className="single-footer-widget">
               <h3>Main Links</h3>
               <ul className="services-list">
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-5 col-sm-5">
+          <div className="col-lg-2 col-md-5 col-6">
             <div className="single-footer-widget">
               <h3>People</h3>
               <ul className="services-list">
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-5 col-sm-5">
+          <div className="col-lg-2 col-md-5 col-6">
             <div className="single-footer-widget">
               <h3>Programs</h3>
               <ul className="support-list">
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-5 col-sm-5">
+          <div className="col-lg-2 col-md-5 col-6">
             <div className="single-footer-widget">
               <h3>Media</h3>
               <ul className="support-list">
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div align="center" className="col-lg-12 col-md-6 col-sm-6">
+        <div className="col-12 text-center">
           <div>
             <ul className="footer-contact-info">
               <li style={{ color: '#acc5db', listStyle: 'none' }}>

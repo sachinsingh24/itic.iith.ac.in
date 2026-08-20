@@ -126,6 +126,9 @@
   .single-footer-widget .logo a {
     display: inline-block;
   }
+  .single-footer-widget.footer-about {
+    margin-right: 130px;
+  }
   .single-footer-widget p {
     color: #acc5db;
   }
@@ -158,6 +161,11 @@
   .single-footer-widget .support-list li a:hover {
     color: #f9a33f;
       padding-left: 5px;
+  }
+  .footer-area .footer-contact-info {
+    padding-left: 0;
+      margin-bottom: 0;
+      list-style-type: none;
   }
   .single-footer-widget .footer-contact-info li {
     color: #ffffff;
@@ -227,12 +235,15 @@
 @media only screen and (max-width: 767px) {
   .footer-area {
     padding-top: 60px;
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+  .single-footer-widget.footer-about {
+    margin-right: 0;
+      text-align: center;
   }
   .divider {
     display: none;
-  }
-  .copyright-area {
-    margin-top: 30px;
   }
 }
 
