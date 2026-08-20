@@ -241,8 +241,8 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .saas-banner .hero-content .default-btn i {
     color: #ff612f;
@@ -1002,3 +1002,12 @@ p {
 }
 
 
+
+@media only screen and (max-width: 767px) {
+  .single-footer-widget.portfolio-footer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}

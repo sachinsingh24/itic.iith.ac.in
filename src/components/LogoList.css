@@ -815,3 +815,26 @@ p {
     line-height: 1.3;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-clients-logo {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .single-clients-logo a {
+    width: 100%;
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-clients-logo {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .single-clients-logo a {
+    width: 100%;
+    height: 110px;
+    padding: 8px;
+  }
+}

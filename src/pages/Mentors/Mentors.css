@@ -1,7 +1,7 @@
 
   .bg-f4f5fe-big {
     background-color: #f4f5fe;
-      height: 320px;
+      min-height: 320px;
   }
   .single-team-box .image img {
     border-radius: 10px;

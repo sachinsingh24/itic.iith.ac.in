@@ -52,7 +52,6 @@ const Nice = () => {
               <h3 style={{ fontSize: '40px', fontWeight: 600 }}>
                 How the program delivers value
               </h3>
-              <br />
               <p>
                 NICE supports entrepreneurs and startups by providing the
                 structured pre-incubation/incubation support which includes
@@ -99,7 +98,6 @@ const Nice = () => {
               <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
                 Eligibility criteria
               </h2>
-              <br />
               <p>
                 <strong>The general eligibility criteria for applications:</strong>
               </p>

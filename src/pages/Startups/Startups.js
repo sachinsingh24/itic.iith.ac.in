@@ -57,7 +57,7 @@ const StartupCard = ({ slug, startup }) => {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                flexWrap: 'nowrap',
+                flexWrap: 'wrap',
               }}
             >
               <ul className="social social1">

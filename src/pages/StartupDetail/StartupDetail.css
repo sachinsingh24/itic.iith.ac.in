@@ -1052,3 +1052,25 @@ h3.title {
     }
 
 }
+
+@media only screen and (max-width: 991px) {
+    .heading-icon-wrap {
+        flex-wrap: wrap;
+    }
+
+    .top-heading {
+        font-size: 28px;
+    }
+
+    .btn-wrap button.btn a.download-link {
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .btn-wrap {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
