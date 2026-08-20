@@ -57,7 +57,12 @@ const LoopCarousel = ({
   const onPointerUp = () => {
     if (!dragging) return;
     const itemWidth = stageOuterRef.current ? stageOuterRef.current.clientWidth / perView : 0;
-    const stepCount = itemWidth ? Math.round(dragOffset / itemWidth) : 0;
+    const threshold = itemWidth ? Math.min(60, itemWidth * 0.15) : 60;
+    let stepCount = 0;
+    if (itemWidth && Math.abs(dragOffset) > threshold) {
+      const steps = Math.max(1, Math.round(Math.abs(dragOffset) / itemWidth));
+      stepCount = dragOffset < 0 ? steps : -steps;
+    }
     setDragging(false);
     setDragOffset(0);
     if (stepCount !== 0) {
