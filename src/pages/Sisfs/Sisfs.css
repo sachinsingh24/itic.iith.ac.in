@@ -71,6 +71,12 @@
       font-size: 22px;
       font-weight: 500;
   }
+  .sisfs-sectors .features-box {
+    height: calc(100% - 10px);
+  }
+  .sisfs-sectors .features-box h6 {
+    min-height: 2.4em;
+  }
   .col-lg-4:nth-child(1) .features-box .icon {
     background-color: #ffd7cb;
       color: #ff612f;

@@ -270,7 +270,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="features-area pb-30">
+      <section className="features-area home-features pb-30">
         <div className="container">
           <div className="section-title">
             <h2 style={{ fontSize: "40px", fontWeight: 600, marginBottom: "15px" }}>
@@ -292,7 +292,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="features-area pb-30">
+      <section className="features-area home-features pb-30">
         <div className="container">
           <div className="section-title">
             <h2 style={{ fontSize: "40px", fontWeight: 600, marginTop: "20px" }}>Focus Areas</h2>

@@ -150,6 +150,19 @@
   font-size: 22px;
   font-weight: 500;
 }
+.home-features .features-box {
+  height: calc(100% - 10px);
+}
+.home-features .features-box .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-features .features-box .icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 .col-lg-4:nth-child(1) .features-box .icon {
   background-color: #ffd7cb;
   color: #ff612f;
@@ -447,6 +460,9 @@
   }
   .features-box h3 {
     font-size: 18px;
+  }
+  .home-features .features-box h6 {
+    min-height: 2.4em;
   }
   .single-feedback-item {
     margin-top: 0;

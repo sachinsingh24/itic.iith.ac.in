@@ -96,7 +96,7 @@ const Sisfs = () => {
                 <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
                   Areas of interest for SISFS:
                 </h2>
-                <div className="row justify-content-center p-3">
+                <div className="row justify-content-center p-3 sisfs-sectors">
                   <div className="col-lg-2 col-sm-6 col-6">
                     <div className="features-box value-iTIC">
                       <div className="icon">

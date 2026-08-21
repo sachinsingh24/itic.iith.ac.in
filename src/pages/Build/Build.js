@@ -279,7 +279,7 @@ const Build = () => {
         </div>
       </section>
 
-      <section className="features-area pb-30">
+      <section className="features-area build-features pb-30">
         <div className="container">
           <div className="overview-content pl-3 mb-5">
             <h2 style={{ fontSize: '35px', fontWeight: 600, textAlign: 'center' }}>
