@@ -558,7 +558,6 @@ body {
 .faq-accordion.full-width {
   margin: auto;
   max-width: 100%;
-  margin-bottom: 30px;
 }
 .faq-accordion .accordion .accordion-button {
   padding: 0;
