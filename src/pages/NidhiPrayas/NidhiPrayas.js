@@ -39,7 +39,12 @@ const NidhiPrayas = () => {
                 </p>
               </div>
             </div>
-
+          </div>
+        </div>
+      </section>
+      <section className="page-section">
+        <div className="container">
+          <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">
               <div className="overview-content">
                 <h2 className="section-heading">Eligibility criteria</h2>
@@ -113,7 +118,6 @@ const NidhiPrayas = () => {
       <LogoList logos={nidhiPrayasPartners} title="Partners, Patrons and Promoters" variant="card" stacked fluid />
 
       <ShapeDecoration />
-
     </>
   );
 };
