@@ -221,12 +221,7 @@ const Navbar = () => {
                 </li>
               </ul>
               <div className="others-options">
-                <Link
-                  to="/apply"
-                  className="default-btn"
-                  style={{ paddingLeft: '5px', paddingRight: '5px' }}
-                  onClick={closeMobile}
-                >
+                <Link to="/apply" className="default-btn" onClick={closeMobile}>
                   Apply for Support <span></span>
                 </Link>
               </div>
@@ -240,7 +235,7 @@ const Navbar = () => {
           <div className={`container ${dotsOpen ? 'active' : ''}`}>
             <div className="option-inner">
               <div className="others-options justify-content-center">
-                <Link to="/apply" className="optional-btn" style={{ paddingLeft: '25px' }} onClick={closeMobile}>
+                <Link to="/apply" className="optional-btn" onClick={closeMobile}>
                   Apply for Support
                 </Link>
               </div>

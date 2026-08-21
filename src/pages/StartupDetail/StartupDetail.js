@@ -1,14 +1,11 @@
 import _asset0 from '../../images/People/dummy-icon.png';
-import _asset1 from '../../assets/img/shape/10.png';
-import _asset2 from '../../assets/img/shape/7.png';
-import _asset3 from '../../assets/img/shape/11.png';
-import _asset4 from '../../assets/img/shape/12.png';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import startups from '../../data/startups';
 import NotFound from '../NotFound/NotFound';
 import './StartupDetail.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const SocialIcon = ({ href, icon }) => {
   if (!href) return null;
   return (
@@ -68,7 +65,7 @@ const StartupDetail = () => {
               </div>
               <div className="col-md-9">
                 <div className="heading-icon-wrap">
-                  <h2 className="top-heading">{name}</h2>
+                  <h1 className="top-heading">{name}</h1>
                 </div>
                 <div className="top-second-heading" />
                 {tagline ? (
@@ -317,23 +314,7 @@ const StartupDetail = () => {
         </section>
       ) : null}
 
-      <section className="free-trial-area ptb-100">
-        <div className="shape10">
-          <img alt="" src={_asset1} />
-        </div>
-
-        <div className="shape11">
-          <img alt="" src={_asset2} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset3} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset4} />
-        </div>
-      </section>
+      <ShapeDecoration />
     </div>
   );
 };

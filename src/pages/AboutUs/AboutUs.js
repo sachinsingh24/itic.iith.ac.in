@@ -1,34 +1,22 @@
 import _asset0 from '../../assets/about.jpg';
-import _asset1 from '../../assets/img/shape/10.png';
-import _asset2 from '../../assets/img/shape/7.png';
-import _asset3 from '../../assets/img/shape/11.png';
-import _asset4 from '../../assets/img/shape/12.png';
 import React from 'react';
 import PageTitle from '../../components/PageTitle';
 import LogoList from '../../components/LogoList';
 import { grantFundingAgencies, partners } from '../../data/logos';
 import './AboutUs.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const AboutUs = () => {
   return (
     <>
       <PageTitle title="About us" bg={_asset0} />
 
-      <div className="service-details ptb-50" style={{ marginTop: '50px' }}>
+      <div className="service-details pt-30 pb-30">
         <div className="container">
           <div className="service-details-content">
             <div id="what-we-do" style={{ width: '100%', height: '180px', marginTop: '-180px' }}></div>
 
-            <h3
-              className="section-title"
-              style={{
-                fontSize: '40px',
-                fontWeight: 600,
-                textAlign: 'center',
-                overflow: 'hidden',
-                marginBottom: '15px',
-              }}
-            >
+            <h3 className="section-title section-heading text-center" style={{ overflow: 'hidden' }}>
               What We Do
             </h3>
 
@@ -49,16 +37,9 @@ const AboutUs = () => {
 
             <div id="how-we-do" style={{ width: '100%', height: '150px', marginTop: '-150px' }}></div>
 
-            <h3
-              style={{
-                fontSize: '40px',
-                fontWeight: 600,
-                textAlign: 'center',
-                marginBottom: '15px',
-              }}
-            >
+            <h2 className="section-heading text-center">
               How We Do
-            </h3>
+            </h2>
 
             <p align="justify">
               iTIC incubator dispenses stagewise intervention for startups to grow in the
@@ -74,47 +55,12 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div style={{ margin: '50px' }}></div>
-
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset1} />
-        </div>
-
-        <div className="shape11">
-          <img alt="" src={_asset2} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset3} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset4} />
-        </div>
-      </section>
-
       <LogoList logos={grantFundingAgencies} title="Grant and funding agencies" stacked />
 
       <LogoList logos={partners} title="Partners" stacked />
 
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset1} />
-        </div>
+      <ShapeDecoration />
 
-        <div className="shape11">
-          <img alt="" src={_asset2} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset3} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset4} />
-        </div>
-      </section>
     </>
   );
 };

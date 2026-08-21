@@ -8,10 +8,6 @@
 .bg-f4f6fc {
   background-color: #f4f6fc;
 }
-.ptb-40 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 .max-width-1290 {
   max-width: 1290px;
 }
@@ -19,6 +15,10 @@
   margin-bottom: 0;
   font-size: 40px;
   font-weight: 600;
+}
+.section-title p {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .video-presentation-area {
   position: relative;
@@ -84,12 +84,6 @@
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-.funfacts-inner {
-  max-width: 1000px;
-  margin-top: 140px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .single-funfacts {
   margin-bottom: 30px;
   text-align: center;
@@ -144,11 +138,6 @@
   transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
-}
-.features-box h3 {
-  margin-bottom: 10px;
-  font-size: 22px;
-  font-weight: 500;
 }
 .home-features .features-box {
   height: calc(100% - 10px);
@@ -386,24 +375,11 @@
   left: 0;
   z-index: 0;
 }
-.overview-item {
-  margin-bottom: 50px;
-  border-bottom: 1px solid #edf0f7;
-  padding-bottom: 50px;
-}
-.overview-item:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
 .overview-content h3 {
   font-size: 25px;
 }
 .overview-content p {
   margin: 0;
-}
-.funfacts-inner {
-  margin-top: 20px;
 }
 #owl-demo .item img {
   display: block !important;
@@ -430,9 +406,6 @@
     height: 320px;
   }
 }
-.video-presentation-area .funfacts-inner {
-  max-width: 100%;
-}
 
 @media only screen and (max-width: 767px) {
   .max-width-1290 {
@@ -445,21 +418,12 @@
     font-size: 24px;
     line-height: 1.3;
   }
-  .funfacts-inner {
-    max-width: 100%;
-    margin-top: 40px;
-    margin-left: 0;
-    margin-right: 0;
-  }
   .single-funfacts h3 {
     margin-bottom: 2px;
     font-size: 24px;
   }
   .single-funfacts h3 .sign-icon {
     font-size: 22px;
-  }
-  .features-box h3 {
-    font-size: 18px;
   }
   .home-features .features-box h6 {
     min-height: 2.4em;
@@ -512,17 +476,8 @@
     margin-top: 15px;
     margin-bottom: 25px;
   }
-  .saas-banner .hero-content.pl-4 {
-    padding: 0 !important;
+  .saas-banner .hero-content {
     margin-top: 30px;
-  }
-  .overview-item {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-  }
-  .overview-item:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
 }
 
@@ -568,17 +523,8 @@
     margin-top: 15px;
     margin-bottom: 25px;
   }
-  .saas-banner .hero-content.pl-4 {
-    padding: 0;
+  .saas-banner .hero-content {
     margin-top: 30px;
-  }
-  .overview-item {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-  }
-  .overview-item:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
 }
 

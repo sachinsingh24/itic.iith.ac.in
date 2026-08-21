@@ -1,9 +1,5 @@
 import _asset0 from "../../assets/Banner-img/Nidhi Prayas.jpg";
 import _asset1 from "../../downloads/Nidhi Prayas Policy.pdf";
-import _asset2 from "../../assets/img/shape/10.png";
-import _asset3 from "../../assets/img/shape/7.png";
-import _asset4 from "../../assets/img/shape/11.png";
-import _asset5 from "../../assets/img/shape/12.png";
 import React from "react";
 import PageTitle from "../../components/PageTitle";
 import Accordion from "react-bootstrap/Accordion";
@@ -11,16 +7,17 @@ import LogoList from "../../components/LogoList";
 import { nidhiPrayasPartners } from "../../data/programPartners";
 import "./NidhiPrayas.css";
 
+import ShapeDecoration from "../../components/ShapeDecoration";
 const NidhiPrayas = () => {
   return (
     <>
       <PageTitle title="NIDHI PRAYAS" subtitle="The moving force" bg={_asset0} />
 
-      <section className="about-area pt-30 pb-15">
+      <section className="about-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-16">
-              <div className="about-content">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
                 <p>NIDHI PRomoting and Accelerating Young and ASpiring technology entrepreneurs (PRAYAS) is a pre-incubation initiative designed to support young innovators working in the hardware domain turn their ideas into proofs-of-concept.</p>
               </div>
             </div>
@@ -28,37 +25,39 @@ const NidhiPrayas = () => {
         </div>
       </section>
 
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-12 col-md-12">
-            <div className="overview-content pl-3">
-              <h2 style={{ fontSize: "40px", fontWeight: 600 }}>How the program delivers value</h2>
+      <section className="page-section">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">How the program delivers value</h2>
 
-              <p>
-                NIDHI PRAYAS at iTIC focuses on supporting specifically hardware based deeptech ideas with the prototype grant of upto INR 10 Lakhs. NIDHI PRAYAS is a part of iTIC pre-incubation structured support.
-                <br />
-                Areas of interest for NIDHI PRAYAS are Manufacturing, Agriculture, Healthcare, Education, Infrastructure and transportation, Environment and cleantech, Clean-tech, Energy solutions, Biotechnology, Water and Internet of Things (IoT) , AI/ML &amp; Other technology areas.
-              </p>
+                <p>
+                  NIDHI PRAYAS at iTIC focuses on supporting specifically hardware based deeptech ideas with the prototype grant of upto INR 10 Lakhs. NIDHI PRAYAS is a part of iTIC pre-incubation structured support.
+                  <br />
+                  Areas of interest for NIDHI PRAYAS are Manufacturing, Agriculture, Healthcare, Education, Infrastructure and transportation, Environment and cleantech, Clean-tech, Energy solutions, Biotechnology, Water and Internet of Things (IoT) , AI/ML &amp; Other technology areas.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-lg-12 col-md-12 pt-15 pb-15">
-            <div className="overview-content pl-3">
-              <h2 style={{ fontSize: "40px", fontWeight: 600 }}>Eligibility criteria</h2>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">Eligibility criteria</h2>
 
-              <ul>
-                <li>An Indian Citizen</li>
-                <li>Age of innovator to be 18 or above</li>
-                <li>A graduate from Engineering or Science background</li>
-                <li>Working on a deep tech idea</li>
-                <li>Tech with a possible IP</li>
-              </ul>
+                <ul>
+                  <li>An Indian Citizen</li>
+                  <li>Age of innovator to be 18 or above</li>
+                  <li>A graduate from Engineering or Science background</li>
+                  <li>Working on a deep tech idea</li>
+                  <li>Tech with a possible IP</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="faq-area ptb-30">
+      <section className="faq-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">
@@ -96,14 +95,14 @@ const NidhiPrayas = () => {
         </div>
       </section>
 
-      <section className="about-area mb-4">
+      <section className="about-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-16">
-              <div className="about-content">
-                <h5>Download Policies :</h5>
-                <a className="default-btn" href={_asset1} style={{ paddingLeft: "25px" }} target="_blank" rel="noopener noreferrer">
-                  NIDHI PRAYAS
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h3 className="sub-heading">Download Policies :</h3>
+                <a className="default-btn" href={_asset1} target="_blank" rel="noopener noreferrer">
+                  NIDHI PRAYAS<span></span>
                 </a>
               </div>
             </div>
@@ -113,23 +112,8 @@ const NidhiPrayas = () => {
 
       <LogoList logos={nidhiPrayasPartners} title="Partners, Patrons and Promoters" variant="card" stacked fluid />
 
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset2} />
-        </div>
+      <ShapeDecoration />
 
-        <div className="shape11">
-          <img alt="" src={_asset3} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset4} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset5} />
-        </div>
-      </section>
     </>
   );
 };

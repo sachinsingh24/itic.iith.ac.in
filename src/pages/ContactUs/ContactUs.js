@@ -1,13 +1,10 @@
 import _asset0 from '../../assets/contact.jpg';
 import _asset1 from '../../assets/img/logo.png';
-import _asset2 from '../../assets/img/shape/10.png';
-import _asset3 from '../../assets/img/shape/7.png';
-import _asset4 from '../../assets/img/shape/11.png';
-import _asset5 from '../../assets/img/shape/12.png';
 import React, { useEffect, useRef } from 'react';
 import PageTitle from '../../components/PageTitle';
 import './ContactUs.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const CALENDLY_URL = 'https://calendly.com/sowmya-ch-itic/30min';
 const CALENDLY_SCRIPT = 'https://assets.calendly.com/assets/external/widget.js';
 
@@ -49,7 +46,7 @@ const ContactUs = () => {
         extraStyle={{ backgroundPosition: 'bottom' }}
       />
 
-      <section className="contact-area ptb-100">
+      <section className="contact-area">
         <div className="container">
           <div className="contact-inner">
             <div className="row">
@@ -137,23 +134,8 @@ const ContactUs = () => {
         </div>
       </section>
 
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset2} />
-        </div>
+      <ShapeDecoration />
 
-        <div className="shape11">
-          <img alt="" src={_asset3} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset4} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset5} />
-        </div>
-      </section>
     </>
   );
 };

@@ -1,9 +1,5 @@
 import _asset0 from '../../assets/Banner-img/Meity Program.jpg';
 import _asset1 from '../../downloads/Meity Scheme _ Policy Document.pdf';
-import _asset2 from '../../assets/img/shape/10.png';
-import _asset3 from '../../assets/img/shape/7.png';
-import _asset4 from '../../assets/img/shape/11.png';
-import _asset5 from '../../assets/img/shape/12.png';
 import React from 'react';
 import PageTitle from '../../components/PageTitle';
 import Accordion from 'react-bootstrap/Accordion';
@@ -11,6 +7,7 @@ import LogoList from '../../components/LogoList';
 import { meityTidePartners } from '../../data/programPartners';
 import './MeityTide.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const MeityTide = () => {
   return (
     <>
@@ -20,11 +17,11 @@ const MeityTide = () => {
         bg={_asset0}
       />
 
-      <section className="about-area pt-30 pb-15">
+      <section className="about-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-16">
-              <div className="about-content">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
                 <p>
                   TIDE 2.0 is a program by the Ministry of Electronics &amp;
                   Information Technology (MeitY) to promote tech entrepreneurship
@@ -42,75 +39,76 @@ const MeityTide = () => {
         </div>
       </section>
 
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-12 col-md-12">
-            <div className="overview-content pl-3">
-              <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
-                How the program delivers value
-              </h2>
+      <section className="page-section">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">
+                  How the program delivers value
+                </h2>
 
-              <p>
-                TIDE 2.0 fosters and evangelises a vibrant entrepreneurship
-                ecosystem that inspires budding entrepreneurs as well as supports
-                existing ones. It creates entrepreneurship models of both
-                financial as well as social value. Along with this it provides
-                holistic incubation support including co-working space, mentoring,
-                funding, and networking for startups.
-              </p>
-              <br />
-              <h2 style={{ fontSize: '40px', fontWeight: 600 }}>Funding</h2>
+                <p>
+                  TIDE 2.0 fosters and evangelises a vibrant entrepreneurship
+                  ecosystem that inspires budding entrepreneurs as well as supports
+                  existing ones. It creates entrepreneurship models of both
+                  financial as well as social value. Along with this it provides
+                  holistic incubation support including co-working space, mentoring,
+                  funding, and networking for startups.
+                </p>
+                <br />
+                <h2 className="section-heading">Funding</h2>
 
-              <ul>
-                <li>
-                  Idea/PoC stage startups are awarded the EiR stipend of upto INR
-                  4 Lakhs and pre-incubation support of 1 year for validation and
-                  development of that idea.
-                </li>
-                <li>
-                  Prototype stage startups are provided with the grant support of
-                  upto INR 7 Lakhs and pre-incubation support of 1 year.
-                </li>
-              </ul>
+                <ul>
+                  <li>
+                    Idea/PoC stage startups are awarded the EiR stipend of upto INR
+                    4 Lakhs and pre-incubation support of 1 year for validation and
+                    development of that idea.
+                  </li>
+                  <li>
+                    Prototype stage startups are provided with the grant support of
+                    upto INR 7 Lakhs and pre-incubation support of 1 year.
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-          <div className="col-lg-12 col-md-12 pt-30 pb-30">
-            <div className="overview-content pl-3">
-              <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
-                Eligibility criteria
-              </h2>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">
+                  Eligibility criteria
+                </h2>
 
-              <p>
-                <b>The eligibility criteria for EiR candidates:</b>
-              </p>
+                <p>
+                  <b>The eligibility criteria for EiR candidates:</b>
+                </p>
 
-              <ul>
-                <li>The applicant must be a citizen of India.</li>
-                <li>The applicant should have an idea or PoC</li>
-                <li>
-                  At least one Co-founder should be willing to pursue the idea
-                  full-time.
-                </li>
-              </ul>
-              &nbsp;
+                <ul>
+                  <li>The applicant must be a citizen of India.</li>
+                  <li>The applicant should have an idea or PoC</li>
+                  <li>
+                    At least one Co-founder should be willing to pursue the idea
+                    full-time.
+                  </li>
+                </ul>
 
-              <p>
-                <b>The eligibility criteria for grant position candidates:</b>
-              </p>
+                <p>
+                  <b>The eligibility criteria for grant position candidates:</b>
+                </p>
 
-              <ul>
-                <li>The applicant must be a citizen of India.</li>
-                <li>
-                  The applicant should have a Proof of Concept (POC) or Prototype
-                </li>
-              </ul>
+                <ul>
+                  <li>The applicant must be a citizen of India.</li>
+                  <li>
+                    The applicant should have a Proof of Concept (POC) or Prototype
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="faq-area ptb-30">
+      <section className="faq-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">
@@ -156,20 +154,19 @@ const MeityTide = () => {
         </div>
       </section>
 
-      <section className="about-area mb-4">
+      <section className="about-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-16">
-              <div className="about-content">
-                <h5>Download Policies :</h5>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h3 className="sub-heading">Download Policies :</h3>
                 <a
                   className="default-btn"
                   href={_asset1}
-                  style={{ paddingLeft: '25px' }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  MEITY SCHEME
+                  MEITY SCHEME<span></span>
                 </a>
               </div>
             </div>
@@ -179,23 +176,8 @@ const MeityTide = () => {
 
       <LogoList logos={meityTidePartners} title="Partners, Patrons and Promoters" variant="card" stacked fluid />
 
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset2} />
-        </div>
+      <ShapeDecoration />
 
-        <div className="shape11">
-          <img alt="" src={_asset3} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset4} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset5} />
-        </div>
-      </section>
     </>
   );
 };

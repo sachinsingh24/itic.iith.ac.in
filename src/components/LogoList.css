@@ -1,7 +1,6 @@
 
 .partner-title h3 {
   color: #8791b0;
-padding: 30px;
   font-size: 22px;
   font-weight: 500;
 }
@@ -29,7 +28,6 @@ padding: 30px;
   margin-right: -5px;
   margin-left: -5px;
   margin-top: -10px;
-padding-bottom: 30px;
 }
 .single-clients-logo {
   -ms-flex: 0 0 20%;
@@ -799,7 +797,7 @@ p {
 
 .partner-area-stacked .partner-title {
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .partner-area-stacked .partner-title h3 {

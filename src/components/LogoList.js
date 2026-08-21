@@ -23,11 +23,11 @@ const LogoList = ({ logos, title, variant = 'card', fluid = false, stacked = fal
   );
 
   return (
-    <section className={`partner-area${stacked ? ' partner-area-stacked' : ''} pb-30 bg-f8fbfa`}>
+    <section className={`partner-area${stacked ? ' partner-area-stacked' : ''} pb-30 pt-30 bg-f8fbfa`}>
       <div className={fluid ? 'container-fluid' : 'container'}>
         {stacked ? (
           <>
-            <div className="partner-title p-30">
+            <div className="partner-title">
               <h3>{title}</h3>
             </div>
             <div className="clients-logo-list align-items-center d-flex justify-content-center">

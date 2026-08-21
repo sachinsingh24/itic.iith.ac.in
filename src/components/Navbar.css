@@ -14,10 +14,7 @@
   border-radius: 5px;
   font-weight: 500;
   font-size: 15px;
-  padding-left: 50px;
-  padding-right: 25px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: 13px 25px;
 }
 .default-btn i {
   position: absolute;
@@ -62,10 +59,7 @@
   border-radius: 5px;
   font-weight: 500;
   font-size: 15px;
-  padding-left: 55px;
-  padding-right: 30px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: 13px 30px;
 }
 .optional-btn i {
   position: absolute;
@@ -408,14 +402,10 @@
   background-color: #ee4132;
 }
 .others-option-for-responsive .option-inner .others-options .optional-btn {
-  margin-left: 5px;
+  margin: 0;
   color: #ffffff;
   background-color: #ee4132;
-  font-size: 12px;
-  padding-left: 35px;
-  padding-right: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  white-space: nowrap;
 }
 .others-option-for-responsive .option-inner .others-options .optional-btn::before {
   border-color: #ee4132;

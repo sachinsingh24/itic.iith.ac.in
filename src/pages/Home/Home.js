@@ -177,12 +177,12 @@ const Home = () => {
             <div className="container max-width-1290">
               <div className="row align-items-center pt-5">
                 <div className="col-lg-6 col-md-12">
-                  <div className="slide-image mt-70">
+                  <div className="slide-image">
                     <img alt="img" className="img-fluid" src={_asset0} />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12">
-                  <div className="hero-content pl-4">
+                  <div className="hero-content">
                     <h1>Unleashing Deeptech Innovation and Entrepreneurship</h1>
                   </div>
                 </div>
@@ -195,46 +195,44 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="ptb-40 bg-f4f6fc">
-        <div className="overview-item">
-          <div className="container max-width-1290">
-            <div className="row align-items-top">
-              <div className="col-lg-12 col-md-12">
-                <div className="overview-content pl-3">
-                  <h2 align="center" className="section-title" style={{ fontSize: "40px", fontWeight: 600 }}>
-                    What is <span className="span-color">i</span>TIC ?
-                  </h2>
-                  <p align="center">iTIC is an incubator under the aegis of the Indian Institute of Technology Hyderabad (IITH) and supported by the Department of Science and Technology (DST), Government of India. iTIC is a Not-For-Profit Society that focuses on creating a supportive and nourishing environment for budding entrepreneurs in the field of technology. iTIC aims to help entrepreneurs leverage a premier quality research and startup ecosystem to build a comprehensive platform to practice innovation and entrepreneurship so that these entrepreneurial ideas can be turned into sustainable, scalable profit-making business ventures.</p>
-                </div>
+      <section className="page-section bg-f4f6fc">
+        <div className="container max-width-1290">
+          <div className="row align-items-center">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 align="center" className="section-title section-heading">
+                  What is <span className="span-color">i</span>TIC ?
+                </h2>
+                <p align="center">iTIC is an incubator under the aegis of the Indian Institute of Technology Hyderabad (IITH) and supported by the Department of Science and Technology (DST), Government of India. iTIC is a Not-For-Profit Society that focuses on creating a supportive and nourishing environment for budding entrepreneurs in the field of technology. iTIC aims to help entrepreneurs leverage a premier quality research and startup ecosystem to build a comprehensive platform to practice innovation and entrepreneurship so that these entrepreneurial ideas can be turned into sustainable, scalable profit-making business ventures.</p>
               </div>
-              <div className="col-lg-12 col-md-12" style={{ paddingTop: "50px" }}>
-                <LoopCarousel
-                  className="home-gallery-slides"
-                  items={galleryImages}
-                  renderItem={(src) => (
-                    <div className="item">
-                      <img className="img-fluid" src={src} alt="gallery" />
-                    </div>
-                  )}
-                  interval={2000}
-                  speed={0.8}
-                  margin={15}
-                  mobileItems={1}
-                  tabletItems={1}
-                  desktopItems={1}
-                  tabletMin={768}
-                  desktopMin={1200}
-                />
-              </div>
+            </div>
+            <div className="col-lg-12 col-md-12">
+              <LoopCarousel
+                className="home-gallery-slides"
+                items={galleryImages}
+                renderItem={(src) => (
+                  <div className="item">
+                    <img className="img-fluid" src={src} alt="gallery" />
+                  </div>
+                )}
+                interval={2000}
+                speed={0.8}
+                margin={15}
+                mobileItems={1}
+                tabletItems={1}
+                desktopItems={1}
+                tabletMin={768}
+                desktopMin={1200}
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="video-presentation-area ptb-40">
+      <section className="video-presentation-area">
         <div className="container">
           <div className="section-title">
-            <h2 style={{ fontSize: "40px", fontWeight: 600 }}>
+            <h2 className="section-heading">
               Impact By <span className="span-color">i</span>TIC
             </h2>
           </div>
@@ -243,9 +241,9 @@ const Home = () => {
               {stats.map((s, i) => (
                 <div className="col-lg-4 col-6 col-sm-6" key={i}>
                   <div className="single-funfacts funfact-style-two">
-                    <h3 style={{ fontSize: "50px !important" }}>
+                    <h3>
                       <OdometerCounter value={s.count} />
-                      <span className="sign-icon pt-3" style={{ fontSize: "50px !important", marginLeft: "3px", verticalAlign: "middle" }}>
+                      <span className="sign-icon" style={{ marginLeft: "3px", verticalAlign: "middle" }}>
                         {s.suffix}
                       </span>
                     </h3>
@@ -270,10 +268,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="features-area home-features pb-30">
+      <section className="features-area home-features">
         <div className="container">
           <div className="section-title">
-            <h2 style={{ fontSize: "40px", fontWeight: 600, marginBottom: "15px" }}>
+            <h2 className="section-heading">
               How <span className="span-color">i</span>TIC Adds Value
             </h2>
           </div>
@@ -292,13 +290,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="features-area home-features pb-30">
+      <section className="features-area home-features">
         <div className="container">
           <div className="section-title">
-            <h2 style={{ fontSize: "40px", fontWeight: 600, marginTop: "20px" }}>Focus Areas</h2>
-          </div>
-          <div align="center" style={{ paddingBottom: "10px" }}>
-            <p style={{ marginBottom: "5px" }}>Our primary focus area is in the Deeptech domain, but not limited to any one specific sector.</p>
+            <h2 className="section-heading">Focus Areas</h2>
+            <p>Our primary focus area is in the Deeptech domain, but not limited to any one specific sector.</p>
           </div>
           <div className="row">
             {focusAreas.map((f, i) => (
@@ -315,7 +311,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="feedback-area pt-30 pb-30" style={{ backgroundColor: "#f5deb4" }}>
+      <section className="feedback-area" style={{ backgroundColor: "#f5deb4" }}>
         <div className="section-title">
           <h2 style={{ fontWeight: 600 }}>Startup Testimonials</h2>
         </div>

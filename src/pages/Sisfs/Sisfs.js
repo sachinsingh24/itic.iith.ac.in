@@ -11,10 +11,6 @@ import _asset9 from '../../assets/logos/energy.png';
 import _asset10 from '../../assets/logos/mobility.png';
 import _asset11 from '../../assets/logos/defance.png';
 import _asset12 from '../../assets/logos/space.png';
-import _asset13 from '../../assets/img/shape/10.png';
-import _asset14 from '../../assets/img/shape/7.png';
-import _asset15 from '../../assets/img/shape/11.png';
-import _asset16 from '../../assets/img/shape/12.png';
 import React from 'react';
 import PageTitle from '../../components/PageTitle';
 import Accordion from 'react-bootstrap/Accordion';
@@ -22,17 +18,18 @@ import LogoList from '../../components/LogoList';
 import { sisfsPartners } from '../../data/programPartners';
 import './Sisfs.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const Sisfs = () => {
   return (
     <>
       <PageTitle title="SISFS" bg={_asset0} />
 
-      <section className="about-area pt-15 pb-15">
+      <section className="about-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-16">
-              <div className="about-content">
-                <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">
                   Startup India Seed Fund Scheme
                 </h2>
                 <p>
@@ -43,29 +40,26 @@ const Sisfs = () => {
                   with funding for proof of concept, prototype development,
                   product trials, market entry, and commercialization.
                 </p>
-                <div className="about-content">
-                  <a
-                    className="default-btn"
-                    href="https://seedfund.startupindia.gov.in/"
-                    style={{ paddingLeft: '25px' }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Apply Now
-                  </a>
-                </div>
+                <a
+                  className="default-btn"
+                  href="https://seedfund.startupindia.gov.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply Now<span></span>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="about-area pt-15 pb-15">
+      <section className="about-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-16">
-              <div className="about-content">
-                <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">
                   How the Program Delivers Value
                 </h2>
                 <p>
@@ -88,12 +82,12 @@ const Sisfs = () => {
         </div>
       </section>
 
-      <section className="about-area pt-15 pb-15">
+      <section className="about-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">
-              <div className="overview-content pl-3">
-                <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
+              <div className="overview-content">
+                <h2 className="section-heading">
                   Areas of interest for SISFS:
                 </h2>
                 <div className="row justify-content-center p-3 sisfs-sectors">
@@ -233,22 +227,19 @@ const Sisfs = () => {
                   </div>
                 </div>
 
-                <div className="d-flex align-items-center flex-column text-center">
-                  <h3>
+                <div className="overview-content">
+                  <h3 className="sub-heading">
                     various other sectors involving DeepTech and innovative
                     solutions
                   </h3>
-                  <div className="about-content">
-                    <a
-                      className="default-btn mt-0"
-                      href="https://seedfund.startupindia.gov.in/"
-                      style={{ paddingLeft: '25px' }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Apply Now
-                    </a>
-                  </div>
+                  <a
+                    className="default-btn"
+                    href="https://seedfund.startupindia.gov.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Apply Now<span></span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -256,104 +247,90 @@ const Sisfs = () => {
         </div>
       </section>
 
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-12 col-md-12 pt-15 pb-15">
-            <div className="overview-content pl-3">
-              <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
-                Eligibility criteria
-              </h2>
+      <section className="about-area">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">
+                  Eligibility criteria
+                </h2>
 
-              <ul>
-                <li>
-                  The startup must be
-                  <span style={{ fontWeight: 600 }}>DPIIT-recognized</span> and
-                  incorporated not more than
-                  <span style={{ fontWeight: 600 }}>2 years</span> before the
-                  application.
-                </li>
-                <li>
-                  It should have at least
-                  <span style={{ fontWeight: 600 }}>51% Indian shareholding.</span>
-                </li>
-                <li>
-                  The startup should be working on a
-                  <span style={{ fontWeight: 600 }}>DeepTech solution</span> with
-                  potential for market fit, commercialization, and scalability.
-                </li>
-                <li>
-                  It should not have received over
-                  <span style={{ fontWeight: 600 }}>INR 10 Lakhs </span> in
-                  financial support from other government schemes (excluding prize
-                  money and subsidized services).
-                </li>
-              </ul>
-            </div>
-      </div>
-
-    <section className="faq-area pt-15 pb-15">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-12 col-md-12">
-                <div className="faq-accordion full-width">
-                  <h2>FAQs</h2>
-
-                  <Accordion defaultActiveKey="0">
-  {[
-                      {
-                        title: 'What is SISFS?',
-                        body:
-                          'SISFS is a government-backed scheme providing early-stage funding to startups for developing and validating their business ideas and products.',
-                      },
-                      {
-                        title: 'What is the duration of the program?',
-                        body:
-                          'The SISFS program provides funding support for startups over a period of up to two years.',
-                      },
-                      {
-                        title: 'How can I apply?',
-                        body:
-                          'Startups can apply through the Startup India portal, where they can choose their preferred incubators. Applications are accepted on an ongoing basis.',
-                      },
-                      {
-                        title: 'What happens after the program?',
-                        body:
-                          'Graduating startups become part of the iTIC Alumni Network, gaining access to the broader ecosystem of IIT Hyderabad, including students, faculty, researchers, mentors, investors, and policymakers. This network provides ongoing support and resources to help startups grow further.',
-                      },
-                    ].map((item, i) => (
-    <Accordion.Item eventKey={String(i)} key={i}>
-      <Accordion.Header className="accordion-title">{item.title}</Accordion.Header>
-      <Accordion.Body className="accordion-content">{item.body}</Accordion.Body>
-    </Accordion.Item>
-  ))}
-</Accordion>
-                </div>
+                <ul>
+                  <li>
+                    The startup must be
+                    <span style={{ fontWeight: 600 }}>DPIIT-recognized</span> and
+                    incorporated not more than
+                    <span style={{ fontWeight: 600 }}>2 years</span> before the
+                    application.
+                  </li>
+                  <li>
+                    It should have at least
+                    <span style={{ fontWeight: 600 }}>51% Indian shareholding.</span>
+                  </li>
+                  <li>
+                    The startup should be working on a
+                    <span style={{ fontWeight: 600 }}>DeepTech solution</span> with
+                    potential for market fit, commercialization, and scalability.
+                  </li>
+                  <li>
+                    It should not have received over
+                    <span style={{ fontWeight: 600 }}>INR 10 Lakhs </span> in
+                    financial support from other government schemes (excluding prize
+                    money and subsidized services).
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-
-  <LogoList logos={sisfsPartners} title="Partners, Patrons and Promoters" variant="card" stacked fluid />
-
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset13} />
-        </div>
-
-        <div className="shape11">
-          <img alt="" src={_asset14} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset15} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset16} />
         </div>
       </section>
-    </div>
+
+      <section className="faq-area">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-12 col-md-12">
+              <div className="faq-accordion full-width">
+                                  <h2>FAQs</h2>
+
+                                  <Accordion defaultActiveKey="0">
+                  {[
+                                      {
+                                        title: 'What is SISFS?',
+                                        body:
+                                          'SISFS is a government-backed scheme providing early-stage funding to startups for developing and validating their business ideas and products.',
+                                      },
+                                      {
+                                        title: 'What is the duration of the program?',
+                                        body:
+                                          'The SISFS program provides funding support for startups over a period of up to two years.',
+                                      },
+                                      {
+                                        title: 'How can I apply?',
+                                        body:
+                                          'Startups can apply through the Startup India portal, where they can choose their preferred incubators. Applications are accepted on an ongoing basis.',
+                                      },
+                                      {
+                                        title: 'What happens after the program?',
+                                        body:
+                                          'Graduating startups become part of the iTIC Alumni Network, gaining access to the broader ecosystem of IIT Hyderabad, including students, faculty, researchers, mentors, investors, and policymakers. This network provides ongoing support and resources to help startups grow further.',
+                                      },
+                                    ].map((item, i) => (
+                    <Accordion.Item eventKey={String(i)} key={i}>
+                      <Accordion.Header className="accordion-title">{item.title}</Accordion.Header>
+                      <Accordion.Body className="accordion-content">{item.body}</Accordion.Body>
+                    </Accordion.Item>
+                  ))}
+                </Accordion>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <LogoList logos={sisfsPartners} title="Partners, Patrons and Promoters" variant="card" stacked fluid />
+
+      <ShapeDecoration />
 
     </>
   );

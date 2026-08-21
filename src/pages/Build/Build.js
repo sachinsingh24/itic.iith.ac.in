@@ -13,15 +13,12 @@ import _asset11 from '../../assets/logos/build/KIET.jpg';
 import _asset12 from '../../assets/logos/build/Sandip Foundation.jpg';
 import _asset13 from '../../assets/logos/build/Atal Incubation Center.jpg';
 import _asset14 from '../../assets/logos/build/VISHVA.jpg';
-import _asset15 from '../../assets/img/shape/10.png';
-import _asset16 from '../../assets/img/shape/7.png';
-import _asset17 from '../../assets/img/shape/11.png';
-import _asset18 from '../../assets/img/shape/12.png';
 import React from 'react';
 import PageTitle from '../../components/PageTitle';
 import { buildPartners } from '../../data/programPartners';
 import './Build.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const Build = () => {
   return (
     <>
@@ -31,15 +28,14 @@ const Build = () => {
         bg={_asset0}
       />
 
-      <section>
+      <section className="page-section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-12 pb-30 pt-30">
-              <div className="about-content">
-                <h3 style={{ fontSize: '35px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">
                   What is BUILD?
-                </h3>
-                <br />
+                </h2>
                 <p>
                   iTIC Incubator at IIT Hyderabad and Greenko Group have
                   collaborated to launch the Bold &amp; Unique Idea Lead
@@ -56,8 +52,8 @@ const Build = () => {
               </div>
             </div>
 
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
                 <h3>Supported by:</h3>
               </div>
               <div className="clients-logo-list align-items-center d-flex justify-content-center">
@@ -74,15 +70,14 @@ const Build = () => {
         </div>
       </section>
 
-      <section>
+      <section className="page-section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
-                <br />
-                <h3 style={{ fontSize: '35px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                                <h2 className="section-heading">
                   Aims and Objectives of BUILD
-                </h3>
+                </h2>
                 <p>
                   The primary objective of BUILD is to support undergraduate
                   students and recent graduates for building their innovative
@@ -117,10 +112,9 @@ const Build = () => {
               </div>
             </div>
 
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
-                <br />
-                <h2 style={{ fontSize: '35px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                                <h2 className="section-heading">
                   iTIC Incubator at IIT Hyderabad - Program Management Unit (PMU)
                 </h2>
                 <p>
@@ -136,10 +130,9 @@ const Build = () => {
               </div>
             </div>
 
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
-                <br />
-                <h2 style={{ fontSize: '35px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                                <h2 className="section-heading">
                   Role of Partner Incubator (PI)
                 </h2>
 
@@ -163,10 +156,9 @@ const Build = () => {
               </div>
             </div>
 
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
-                <br />
-                <h2 style={{ fontSize: '35px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                                <h2 className="section-heading">
                   Program Structure
                 </h2>
 
@@ -180,10 +172,9 @@ const Build = () => {
               </div>
             </div>
 
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
-                <br />
-                <h2 style={{ fontSize: '35px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                                <h2 className="section-heading">
                   Selection Process
                 </h2>
 
@@ -206,14 +197,12 @@ const Build = () => {
                     progress and disburse the remaining funds.
                   </li>
                 </ul>
-                &nbsp;
               </div>
             </div>
 
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
-                <br />
-                <h2 style={{ fontSize: '35px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                                <h2 className="section-heading">
                   Benefits to the Innovators
                 </h2>
 
@@ -228,10 +217,9 @@ const Build = () => {
               </div>
             </div>
 
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
-                <br />
-                <h2 style={{ fontSize: '35px', fontWeight: 600 }}>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                                <h2 className="section-heading">
                   Eligibility criteria
                 </h2>
 
@@ -247,42 +235,37 @@ const Build = () => {
                   </li>
                 </ul>
               </div>
-              &nbsp;
             </div>
 
-            <div className="col-lg-12 col-md-12 pb-30">
-              <div className="overview-content pl-3">
-                <div className="others-options">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
                   <a
-                    className="default-btn py-2"
+                    className="default-btn"
                     href="https://forms.gle/dmd8wBzExYH8Z8hv8"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ paddingLeft: '25px' }}
                   >
                     Apply Now<span></span>
                   </a>
-                </div>
                 <br />
-                <h2 style={{ fontSize: '20px', fontWeight: 600 }}>
+                <h3 className="sub-heading">
                   Deadline to apply: July 25, 2023
-                </h2>
+                </h3>
                 <br />
-                <h2 style={{ fontSize: '20px', fontWeight: 600 }}>
+                <h3 className="sub-heading">
                   For any queries, feel free to reach out to us on
                   contact@itic.iith.ac.in
-                </h2>
-                <br />
+                </h3>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="features-area build-features pb-30">
+      <section className="features-area build-features">
         <div className="container">
-          <div className="overview-content pl-3 mb-5">
-            <h2 style={{ fontSize: '35px', fontWeight: 600, textAlign: 'center' }}>
+          <div className="overview-content mb-5">
+            <h2 className="section-heading text-center">
               Partner Incubators under BUILD program
             </h2>
           </div>
@@ -460,23 +443,8 @@ const Build = () => {
         </div>
       </section>
 
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset15} />
-        </div>
+      <ShapeDecoration />
 
-        <div className="shape11">
-          <img alt="" src={_asset16} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset17} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset18} />
-        </div>
-      </section>
     </>
   );
 };

@@ -11,7 +11,7 @@
   .page-title-content {
     text-align: center;
   }
-  .page-title-content h2 {
+  .page-title-content h1 {
     color: #ffffff;
       margin-bottom: 0;
       font-size: 50px;
@@ -31,7 +31,7 @@
     background-size: cover;
     background-position: center;
   }
-  .page-title-content h2 {
+  .page-title-content h1 {
     font-size: 30px;
   }
   .page-title-content p {
@@ -46,7 +46,7 @@
         background-size: cover;
         background-position: center;
   }
-  .page-title-content h2 {
+  .page-title-content h1 {
     font-size: 30px;
   }
   .page-title-content p {
@@ -822,7 +822,7 @@ p {
     min-height: 200px;
     padding: 35px 15px;
   }
-  .page-title-content h2 {
+  .page-title-content h1 {
     font-size: 26px;
   }
   .page-title-content p {

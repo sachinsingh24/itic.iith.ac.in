@@ -7,10 +7,10 @@ const PrivacyPolicy = () => {
     <>
       <PageTitle title="Privacy Policy" />
 
-      <div className="service-details ptb-100">
+      <div className="service-details pt-30 pb-30">
         <div className="container">
           <div className="col-lg-12 col-12">
-            <h2>PRIVACY POLICY</h2>
+            <h2 className="section-heading">PRIVACY POLICY</h2>
             <p>
               <b>Effective date: 2021-08-01</b>
             </p>

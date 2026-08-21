@@ -82,7 +82,8 @@ body {
   position: absolute;
   right: 10px;
   top: 10px;
-  max-width: 245px;
+  width: auto;
+  max-width: calc(100vw - 30px);
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
@@ -104,14 +105,13 @@ body {
   transform: scaleX(1);
 }
 .others-option-for-responsive .option-inner .others-options {
-  margin-left: auto;
+  display: flex;
 }
 .others-option-for-responsive .option-inner .others-options .default-btn {
   color: #ffffff;
   background-color: #f9a33f;
   font-size: 12px;
-  padding-left: 35px;
-  padding-right: 15px;
+  padding: 12px 15px;
 }
 .others-option-for-responsive .option-inner .others-options .default-btn i {
   color: #ffffff;
@@ -146,6 +146,112 @@ body {
 .features-area {
   overflow: hidden;
 }
+
+/* Closing decoration band. The four shapes are absolutely positioned, so the
+   band needs its own height; min-height gives them room without the 100px
+   padding that used to make the gap before the footer 125px instead of 50px.
+   Below 1200px the shapes are hidden, so the band collapses with them. */
+.free-trial-area {
+  position: relative;
+  z-index: 1;
+  min-height: 180px;
+}
+.shape10 {
+  position: absolute;
+  right: 30%;
+  bottom: 25%;
+  z-index: -1;
+}
+.shape11 {
+  position: absolute;
+  left: 25%;
+  bottom: 27%;
+  z-index: -1;
+}
+.shape12 {
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+  z-index: -1;
+}
+.shape13 {
+  position: absolute;
+  right: 18%;
+  bottom: 60%;
+  z-index: -1;
+}
+.shape10 img,
+.shape12 img,
+.shape13 img {
+  -webkit-animation: rotateMe 20s linear infinite;
+  animation: rotateMe 20s linear infinite;
+}
+.shape11 img {
+  -webkit-animation: moveBounce 5s linear infinite;
+  animation: moveBounce 5s linear infinite;
+}
+
+@media only screen and (max-width: 1199px) {
+  .free-trial-area {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shape10 img,
+  .shape11 img,
+  .shape12 img,
+  .shape13 img {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+/* One vertical rhythm for every page section, owned here rather than by
+   per-section padding utilities. Each section pads both edges by half the
+   intended gap, so the space between any two adjacent sections is the same
+   50px no matter which sections meet -- utilities on individual sections used
+   to double up to 60px in some places and collapse to 30px in others. */
+.page-section,
+.about-area,
+.features-area,
+.faq-area,
+.team-area,
+.blog-area,
+.contact-area,
+.feedback-area,
+.video-presentation-area,
+.service-details,
+.partner-area {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* Two stacked full-width columns in one section are separate content blocks;
+   give them the same gap without per-page padding utilities. */
+.row > [class*="col-lg-12"] + [class*="col-lg-12"] {
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-section,
+  .about-area,
+  .features-area,
+  .faq-area,
+  .team-area,
+  .blog-area,
+  .contact-area,
+  .feedback-area,
+  .video-presentation-area,
+  .service-details,
+  .partner-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .row > [class*="col-lg-12"] + [class*="col-lg-12"] {
+    margin-top: 20px;
+  }
+}
 .features-box .icon {
   width: 85px;
   height: 85px;
@@ -172,12 +278,6 @@ body {
   transition: 0.5s;
   border-radius: 5px;
   text-align: center;
-}
-.features-box p {
-  margin-bottom: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
 }
 .features-box:hover {
   background-color: #ffffff;
@@ -220,68 +320,7 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.free-trial-area {
-  position: relative;
-  z-index: 1;
-}
-.shape10 {
-  position: absolute;
-  right: 30%;
-  bottom: 25%;
-  z-index: -1;
-}
-.shape10 img {
-  -webkit-animation-name: rotateMe;
-  animation-name: rotateMe;
-  -webkit-animation-duration: 20s;
-  animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-.shape11 {
-  position: absolute;
-  left: 25%;
-  bottom: 27%;
-  z-index: -1;
-}
-.shape11 img {
-  -webkit-animation: moveBounce 5s linear infinite;
-  animation: moveBounce 5s linear infinite;
-}
-.shape12 {
-  position: absolute;
-  left: 10%;
-  bottom: 50%;
-  z-index: -1;
-}
-.shape12 img {
-  -webkit-animation-name: rotateMe;
-  animation-name: rotateMe;
-  -webkit-animation-duration: 20s;
-  animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-.shape13 {
-  position: absolute;
-  right: 18%;
-  bottom: 60%;
-  z-index: -1;
-}
-.shape13 img {
-  -webkit-animation-name: rotateMe;
-  animation-name: rotateMe;
-  -webkit-animation-duration: 20s;
-  animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
+
 .contact-form form .row .col-lg-6,
 .contact-form form .row .col-lg-12 {
   padding-left: 7px;
@@ -324,8 +363,24 @@ body {
   color: #f9a33f;
   padding-right: 3px;
 }
-.overview-content .default-btn {
-  margin-top: 25px;
+/* Buttons. One gap above a button or button row and one between adjacent
+   buttons, so a lone button and a pair are spaced the same way on every page.
+   The navbar variants opt out - they sit in a flex row of their own. */
+.default-btn + .default-btn {
+  margin-left: 12px;
+}
+.strax-nav .navbar .others-options .default-btn,
+.others-option-for-responsive .others-options .default-btn {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  /* two buttons wrap onto separate lines here; the per-button top margin
+     provides the vertical gap, so drop the horizontal one */
+  .default-btn + .default-btn {
+    margin-left: 0;
+  }
 }
 .single-clients-logo img {
   max-width: 100%;
@@ -385,15 +440,33 @@ body {
   margin-bottom: 0;
   list-style-type: none;
 }
-.pb-70 {
-  padding-bottom: 70px;
-}
 .section-title {
   text-align: center;
   max-width: 575px;
   margin-left: auto;
   margin-bottom: 30px;
   margin-right: auto;
+}
+.sub-heading,
+.overview-content h3.sub-heading,
+.about-content h3.sub-heading,
+.service-details-content h3.sub-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.section-heading,
+.about-content h2.section-heading,
+.about-content h3.section-heading,
+.overview-content h2.section-heading,
+.overview-content h3.section-heading,
+.service-details-content h2.section-heading,
+.service-details-content h3.section-heading,
+.faq-accordion h2.section-heading,
+.faq-accordion h3.section-heading {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 .section-title h2 span {
   display: inline-block;
@@ -509,9 +582,6 @@ body {
 .bg-f4f5fe {
   background-color: #f4f5fe;
 }
-.pt-100 {
-  padding-top: 100px;
-}
 .single-team-box {
   margin-bottom: 30px;
   text-align: center;
@@ -583,9 +653,6 @@ body {
   opacity: 1;
   visibility: visible;
 }
-.pb-100 {
-  padding-bottom: 100px;
-}
 .contact-info .contact-info-content .social {
   padding-left: 0;
   list-style-type: none;
@@ -602,24 +669,27 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.pb-15 {
-  padding-bottom: 15px;
-}
-.pt-15 {
-  padding-top: 15px;
-}
 
 @media only screen and (max-width: 767px) {
+  .section-heading,
+  .about-content h2.section-heading,
+  .about-content h3.section-heading,
+  .overview-content h2.section-heading,
+  .overview-content h3.section-heading,
+  .service-details-content h2.section-heading,
+  .service-details-content h3.section-heading,
+  .faq-accordion h2.section-heading,
+  .faq-accordion h3.section-heading {
+    font-size: 24px;
+    line-height: 1.3;
+  }
   .ptb-100 {
     padding-top: 60px;
     padding-bottom: 60px;
   }
   .default-btn {
     font-size: 13px;
-    padding-left: 45px;
-    padding-right: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 20px;
   }
   .default-btn i {
     font-size: 18px;
@@ -679,14 +749,11 @@ body {
     line-height: 36px;
     font-size: 20px;
   }
-  .pb-70 {
-    padding-bottom: 30px;
-  }
   .section-title {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   .section-title.text-left {
     text-align: center !important;
@@ -720,12 +787,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .pt-100 {
-    padding-top: 60px;
-  }
-  .pb-100 {
-    padding-bottom: 60px;
-  }
   .contact-info .contact-info-content .social {
     margin-top: 20px;
   }
@@ -755,6 +816,17 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-heading,
+  .about-content h2.section-heading,
+  .about-content h3.section-heading,
+  .overview-content h2.section-heading,
+  .overview-content h3.section-heading,
+  .service-details-content h2.section-heading,
+  .service-details-content h3.section-heading,
+  .faq-accordion h2.section-heading,
+  .faq-accordion h3.section-heading {
+    font-size: 30px;
+  }
   .ptb-100 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -783,9 +855,6 @@ body {
   .features-box {
     padding: 25px;
   }
-  .features-box h3 {
-    font-size: 20px;
-  }
   .features-box .icon {
     width: 80px;
     height: 80px;
@@ -794,18 +863,12 @@ body {
   .single-clients-logo a {
     padding: 20px 15px;
   }
-  .overview-content.pl-3 {
-    padding-left: 0 !important;
-  }
   .single-blog-post .post-content h3 {
     font-size: 20px;
   }
   .single-footer-widget h3 {
     margin-bottom: 28px;
     font-size: 20px;
-  }
-  .pb-70 {
-    padding-bottom: 50px;
   }
   .section-title h2 {
     font-size: 30px;
@@ -841,15 +904,20 @@ body {
   .about-area .container-fluid {
     max-width: 720px;
   }
-  .pt-100 {
-    padding-top: 80px;
-  }
-  .pb-100 {
-    padding-bottom: 80px;
-  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-heading,
+  .about-content h2.section-heading,
+  .about-content h3.section-heading,
+  .overview-content h2.section-heading,
+  .overview-content h3.section-heading,
+  .service-details-content h2.section-heading,
+  .service-details-content h3.section-heading,
+  .faq-accordion h2.section-heading,
+  .faq-accordion h3.section-heading {
+    font-size: 34px;
+  }
   .strax-nav .navbar .others-options {
     margin-left: 25px;
   }
@@ -861,15 +929,6 @@ body {
   }
   .features-box {
     padding: 30px 19px;
-  }
-  .features-box h3 {
-    font-size: 20px;
-  }
-  .shape10,
-  .shape11,
-  .shape12,
-  .shape13 {
-    display: none;
   }
   .about-content h2 {
     font-size: 34px;

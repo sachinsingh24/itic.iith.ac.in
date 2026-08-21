@@ -9,7 +9,7 @@ const PageTitle = ({ title, subtitle, bg, extraStyle, titleColor }) => {
     >
       <div className="container">
         <div className="page-title-content">
-          <h2 style={titleColor ? { color: titleColor } : undefined}>{title}</h2>
+          <h1 style={titleColor ? { color: titleColor } : undefined}>{title}</h1>
           {subtitle ? <p>{subtitle}</p> : null}
         </div>
       </div>

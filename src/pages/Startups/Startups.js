@@ -5,6 +5,7 @@ import PageTitle from '../../components/PageTitle';
 import startups from '../../data/startups';
 import './Startups.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const SocialIcon = ({ href, icon }) => {
   if (!href) return null;
   const iconClass = {
@@ -73,9 +74,8 @@ const StartupCard = ({ slug, startup }) => {
               </ul>
               <div className="others-options">
                 <Link
-                  className="default-btn py-2"
+                  className="default-btn"
                   to={`/startup/${slug}`}
-                  style={{ paddingLeft: '25px' }}
                 >
                   View More<span />
                 </Link>
@@ -96,7 +96,7 @@ const Startups = () => {
     <>
       <PageTitle title="Startups" bg={_asset0} />
 
-      <section className="about-area ptb-100">
+      <section className="about-area">
         <div className="container">
           <div className="row">
             {startupEntries.map(([slug, startup]) => (
@@ -105,6 +105,8 @@ const Startups = () => {
           </div>
         </div>
       </section>
+
+      <ShapeDecoration />
     </>
   );
 };

@@ -9,15 +9,12 @@ import _asset7 from '../../images/People/teams/Mallesh.jpg';
 import _asset8 from '../../images/People/teams/Ch Sowmya.jpg';
 import _asset9 from '../../images/People/teams/Vamshi Chidhurappa.jpg';
 import _asset10 from '../../images/People/teams/Vishnu.jpg';
-import _asset11 from '../../assets/img/shape/10.png';
-import _asset12 from '../../assets/img/shape/7.png';
-import _asset13 from '../../assets/img/shape/11.png';
-import _asset14 from '../../assets/img/shape/12.png';
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import PageTitle from '../../components/PageTitle';
 import './Team.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const profiles = {
   teamDean: {
     name: 'Prof. Arabinda Haldar',
@@ -92,7 +89,7 @@ const Team = () => {
     <>
       <PageTitle title="Team" bg={_asset0} titleColor="#f9a33f" />
 
-      <section className="team-area pt-100">
+      <section className="team-area">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6">
@@ -358,28 +355,6 @@ const Team = () => {
           </div>
         </div>
       </section>
-      <p>
-        <br />
-        &nbsp;
-      </p>
-
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset11} />
-        </div>
-
-        <div className="shape11">
-          <img alt="" src={_asset12} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset13} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset14} />
-        </div>
-      </section>
 
       <Modal show={profile !== null} onHide={closeProfile}>
         <Modal.Header closeButton />
@@ -393,6 +368,7 @@ const Team = () => {
           </button>
         </Modal.Footer>
       </Modal>
+      <ShapeDecoration />
     </>
   );
 };

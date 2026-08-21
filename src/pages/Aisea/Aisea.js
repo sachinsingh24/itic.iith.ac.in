@@ -1,8 +1,4 @@
 import _asset0 from '../../assets/Banner-img/AISEA.jpg';
-import _asset1 from '../../assets/img/shape/10.png';
-import _asset2 from '../../assets/img/shape/7.png';
-import _asset3 from '../../assets/img/shape/11.png';
-import _asset4 from '../../assets/img/shape/12.png';
 import React from 'react';
 import PageTitle from '../../components/PageTitle';
 import Accordion from 'react-bootstrap/Accordion';
@@ -10,6 +6,7 @@ import LogoList from '../../components/LogoList';
 import { aiseaPartners } from '../../data/programPartners';
 import './Aisea.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const Aisea = () => {
   return (
     <>
@@ -19,11 +16,11 @@ const Aisea = () => {
         bg={_asset0}
       />
 
-      <section className="about-area pt-30 pb-30">
+      <section className="about-area">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-12 col-md-16">
-              <div className="overview-content pl-3">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
                 <p>
                   AISEA (AFI iTIC Foundation Social Entrepreneurship Accelerator)
                   is set up jointly by Action For India and iTIC Incubator at IIT
@@ -55,50 +52,52 @@ const Aisea = () => {
         </div>
       </section>
 
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-12 col-md-12">
-            <div className="overview-content pl-3">
-              <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
-                How the program delivers value
-              </h2>
+      <section className="page-section">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">
+                  How the program delivers value
+                </h2>
 
-              <p>
-                AISEA strives to establish an accelerator that maximizes an
-                enterprise&rsquo;s potential for societal benefit and profit, by
-                assembling a world-class team of experts, creating the
-                infrastructure for seamless peer-to-peer learning, and developing
-                the platform to enhance the accelerator impact. It augments
-                mentoring from various domain experts &amp; serial entrepreneurs,
-                global connections, investor connects, on-demand mentoring,
-                ecosystem connects with government, policymakers, customers,
-                researchers, thought leaders etc., and facilitates partnership
-                opportunities which enable startups to save time and efforts from
-                making costly mistakes in their ventures.
-              </p>
+                <p>
+                  AISEA strives to establish an accelerator that maximizes an
+                  enterprise&rsquo;s potential for societal benefit and profit, by
+                  assembling a world-class team of experts, creating the
+                  infrastructure for seamless peer-to-peer learning, and developing
+                  the platform to enhance the accelerator impact. It augments
+                  mentoring from various domain experts &amp; serial entrepreneurs,
+                  global connections, investor connects, on-demand mentoring,
+                  ecosystem connects with government, policymakers, customers,
+                  researchers, thought leaders etc., and facilitates partnership
+                  opportunities which enable startups to save time and efforts from
+                  making costly mistakes in their ventures.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-lg-12 col-md-12 pt-30 pb-30">
-            <div className="overview-content pl-3">
-              <h2 style={{ fontSize: '40px', fontWeight: 600 }}>
-                Eligibility criteria
-              </h2>
+            <div className="col-lg-12 col-md-12">
+              <div className="overview-content">
+                <h2 className="section-heading">
+                  Eligibility criteria
+                </h2>
 
-              <ul>
-                <li>
-                  The idea should be technology backed and socially impactful
-                </li>
-                <li>The startup should have early traction</li>
-                <li>The start-up founder should be a citizen of India</li>
-                <li>Startups having their own IP are preferable</li>
-              </ul>
+                <ul>
+                  <li>
+                    The idea should be technology backed and socially impactful
+                  </li>
+                  <li>The startup should have early traction</li>
+                  <li>The start-up founder should be a citizen of India</li>
+                  <li>Startups having their own IP are preferable</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="faq-area ptb-30">
+      <section className="faq-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">
@@ -147,23 +146,8 @@ const Aisea = () => {
 
       <LogoList logos={aiseaPartners} title="Partners, Patrons and Promoters" variant="card" stacked fluid />
 
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset1} />
-        </div>
+      <ShapeDecoration />
 
-        <div className="shape11">
-          <img alt="" src={_asset2} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset3} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset4} />
-        </div>
-      </section>
     </>
   );
 };

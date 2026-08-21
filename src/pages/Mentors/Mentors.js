@@ -16,20 +16,17 @@ import _asset14 from '../../images/People/Mentor/People-Mentor-Mudrika-Khandelwa
 import _asset15 from '../../images/People/Mentor/People-Mentor-Narasimha-Kumar.jpg';
 import _asset16 from '../../images/People/Mentor/People-Mentor-Sayak-Banerjee.jpg';
 import _asset17 from '../../images/People/Mentor/People-mentor-Arabinda-Haldar.jpg';
-import _asset18 from '../../assets/img/shape/10.png';
-import _asset19 from '../../assets/img/shape/7.png';
-import _asset20 from '../../assets/img/shape/11.png';
-import _asset21 from '../../assets/img/shape/12.png';
 import React from 'react';
 import PageTitle from '../../components/PageTitle';
 import './Mentors.css';
 
+import ShapeDecoration from '../../components/ShapeDecoration';
 const Mentors = () => {
   return (
     <>
       <PageTitle title="Mentors" bg={_asset0} titleColor="#f9a33f" />
 
-      <section className="team-area pt-100 pb-70">
+      <section className="team-area">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6">
@@ -374,8 +371,6 @@ const Mentors = () => {
                           </li>
                         </ul>
                         <br />
-                        <br />
-                        &nbsp;
                       </div>
                     </div>
                   </div>
@@ -527,8 +522,6 @@ const Mentors = () => {
                         <br />
                         <br />
                         <br />
-                        <br />
-                        &nbsp;
                       </div>
                     </div>
                   </div>
@@ -684,8 +677,6 @@ const Mentors = () => {
                           </li>
                         </ul>
                         <br />
-                        <br />
-                        &nbsp;
                       </div>
                     </div>
                   </div>
@@ -846,8 +837,6 @@ const Mentors = () => {
                             3D-IC
                           </li>
                         </ul>
-                        <br />
-                        &nbsp;
                       </div>
                     </div>
                   </div>
@@ -1123,8 +1112,6 @@ const Mentors = () => {
                         </ul>
                         <br />
                         <br />
-                        <br />
-                        &nbsp;
                       </div>
                     </div>
                   </div>
@@ -1295,23 +1282,8 @@ const Mentors = () => {
         </div>
       </section>
 
-      <section className="free-trial-area ptb-100 bg-f8fbfa">
-        <div className="shape10">
-          <img alt="" src={_asset18} />
-        </div>
+      <ShapeDecoration />
 
-        <div className="shape11">
-          <img alt="" src={_asset19} />
-        </div>
-
-        <div className="shape12">
-          <img alt="" src={_asset20} />
-        </div>
-
-        <div className="shape13">
-          <img alt="" src={_asset21} />
-        </div>
-      </section>
     </>
   );
 };
