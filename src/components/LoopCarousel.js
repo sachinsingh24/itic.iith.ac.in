@@ -148,6 +148,12 @@ const LoopCarousel = ({
     setIndex(cloneCount + dotIndex);
   };
 
+  const moveBy = (amount) => {
+    if (!canSlide) return;
+    setTransitioning(true);
+    setIndex((currentIndex) => Math.min(Math.max(currentIndex + amount, 0), maxIndex + 1));
+  };
+
   const step = 100 / perView;
   const activeDot = ((index - cloneCount) % realCount + realCount) % realCount;
   const isActive = (i) => i >= index && i < index + perView;
@@ -186,7 +192,24 @@ const LoopCarousel = ({
       </div>
       {canSlide && (
         <>
-          <div className="owl-nav disabled"></div>
+          <div className="owl-nav">
+            <button
+              type="button"
+              className="owl-prev"
+              onClick={() => moveBy(-1)}
+              aria-label="Previous slide"
+            >
+              <i aria-hidden="true" className="bx bx-chevron-left"></i>
+            </button>
+            <button
+              type="button"
+              className="owl-next"
+              onClick={() => moveBy(1)}
+              aria-label="Next slide"
+            >
+              <i aria-hidden="true" className="bx bx-chevron-right"></i>
+            </button>
+          </div>
           <div className="owl-dots">
             {items.map((_, i) => (
               <button

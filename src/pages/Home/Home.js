@@ -255,8 +255,8 @@ const Home = () => {
                     <img className="img-fluid" src={src} alt="gallery" loading="lazy" decoding="async" />
                   </div>
                 )}
-                interval={2000}
-                speed={0.8}
+                interval={4000}
+                speed={1.5}
                 margin={15}
                 mobileItems={1}
                 tabletItems={1}

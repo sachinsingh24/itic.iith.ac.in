@@ -1220,6 +1220,11 @@ img {
   cursor: grab;
 }
 
+.home-gallery-slides,
+.feedback-slides {
+  position: relative;
+}
+
 .home-gallery-slides .owl-stage-outer img,
 .feedback-slides .owl-stage-outer img {
   -webkit-user-drag: none;
@@ -1278,6 +1283,52 @@ img {
   -webkit-tap-highlight-color: transparent;
 }
 
+.home-gallery-slides .owl-nav,
+.feedback-slides .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.home-gallery-slides .owl-nav button,
+.feedback-slides .owl-nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #f9a33f;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1;
+  padding: 0;
+  pointer-events: auto;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.home-gallery-slides .owl-nav button i,
+.feedback-slides .owl-nav button i {
+  display: block;
+}
+
+.home-gallery-slides .owl-nav button:hover,
+.home-gallery-slides .owl-nav button:focus-visible,
+.feedback-slides .owl-nav button:hover,
+.feedback-slides .owl-nav button:focus-visible {
+  background-color: #f9a33f;
+  color: #ffffff;
+}
+
 .home-gallery-slides .owl-dots .owl-dot,
 .feedback-slides .owl-dots .owl-dot {
   display: inline-block;
@@ -1324,7 +1375,7 @@ img {
   transform: scale(1);
 }
 
-.home-gallery-slides .owl-nav.disabled + .owl-dots {
+.home-gallery-slides .owl-nav + .owl-dots {
   margin-top: 10px;
 }
 

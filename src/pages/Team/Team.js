@@ -46,9 +46,9 @@ const profiles = {
     ],
   },
   team4: {
-    name: 'Mohd. Sajjad Ali',
+    name: 'Mohd Sajjad Ali',
     bio: [
-      'Sajjad has more than 9 years of professional experience in multiple domains. Before joining the iTIC Incubator, he served in various positions under Technical (R & D), Administration, and Project Management domains with teams associated with both Private and Government aided organisations.',
+      'Sajjad has more than 12+ years of professional experience in startup incubation, government-supported innovation programmes and program management. Before joining the iTIC Incubator, he served in various positions under Technical (R & D), Administration, and Project Management domains with teams associated with both Private and Government aided organisations. His expertise includes project management, procurement, startup onboarding, program execution, portfolio management, documentation, stakeholder coordination and incubation operations. He holds an MBA and B.Tech in Electronics & Communication Engineering, with specialised training in incubation management.',
     ],
   },
   team16: {
@@ -226,7 +226,7 @@ const Team = () => {
                   </div>
                 </div>
                 <div className="col-lg-9 col-md-9 col-sm-9">
-                  <h4>Mohd. Sajjad Ali</h4>
+                  <h4>Mohd Sajjad Ali</h4>
                   <h6 style={{ color: '#f9a33f' }}>Manager - Programs</h6>
                   <hr />
                 </div>
