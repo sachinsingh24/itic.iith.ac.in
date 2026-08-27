@@ -4,8 +4,8 @@ import _asset2 from '../assets/download-image-temp/iTIC Annual Report 2019-20-im
 import _asset3 from '../downloads/iTIC Annual Report 2019-20.pdf';
 import _asset4 from '../assets/download-image-temp/iTIC Annual Report 2020-21-img.jpg';
 import _asset5 from '../downloads/iTIC Annual Report 2020-21.pdf';
-import _asset6 from '../assets/download-image-temp/iTIC Annual Report 2021-22-img.jpg';
-import _asset7 from '../downloads/iTIC Annual Report 2021-22.pdf';
+// import _asset6 from '../assets/download-image-temp/iTIC Annual Report 2021-22-img.jpg';
+// import _asset7 from '../downloads/iTIC Annual Report 2021-22.pdf';
 import _asset8 from '../assets/download-image-temp/iTIC Annual Report 2022-23-img.jpg';
 import _asset9 from '../downloads/iTIC Annual Report 2022-23.pdf';
 import _asset10 from '../assets/ARF report 2023-24.jpg';
