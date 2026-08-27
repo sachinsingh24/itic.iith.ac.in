@@ -37,7 +37,7 @@ const DownloadCard = ({ item }) => {
 
 const DownloadGrid = ({ items }) => {
   return (
-    <div className="row d-flex justify-content-center">
+    <div className="row d-flex justify-content-center pt-4">
       {items.map((item, i) => (
         <DownloadCard key={item.title} item={item} />
       ))}

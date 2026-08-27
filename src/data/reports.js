@@ -30,11 +30,11 @@ export const reports = [
     image: _asset4,
     link: _asset5,
   },
-  {
-    title: 'iTIC Annual Report 2021-22',
-    image: _asset6,
-    link: _asset7,
-  },
+  // {
+  //   title: 'iTIC Annual Report 2021-22',
+  //   image: _asset6,
+  //   link: _asset7,
+  // },
   {
     title: 'iTIC Annual Report 2022-23',
     image: _asset8,
