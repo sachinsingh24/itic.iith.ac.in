@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 const LoopCarousel = ({
   items,
@@ -35,15 +35,41 @@ move_button = false,
 
   const wrapRef = useRef(null);
   const stageOuterRef = useRef(null);
+  const autoplayTimeoutRef = useRef(null);
   const indexRef = useRef(index);
   const remainingRef = useRef(interval);
   const lastTickRef = useRef(Date.now());
   const dragStartRef = useRef(0);
 
+  const clearAutoplayTimer = () => {
+    if (autoplayTimeoutRef.current) {
+      clearTimeout(autoplayTimeoutRef.current);
+      autoplayTimeoutRef.current = null;
+    }
+  };
+
+  const startAutoplay = useCallback(
+    (delay = interval) => {
+      clearAutoplayTimer();
+      if (!canSlide || paused) return;
+
+      lastTickRef.current = Date.now();
+      autoplayTimeoutRef.current = setTimeout(() => {
+        setTransitioning(true);
+        setIndex((i) => (i >= perView + realCount - 1 ? perView + realCount : i + 1));
+        remainingRef.current = interval;
+        startAutoplay(interval);
+      }, delay);
+    },
+    [canSlide, interval, paused, perView, realCount],
+  );
+
   const onPointerDown = (e) => {
     if (!canSlide) return;
     e.preventDefault();
     dragStartRef.current = e.clientX;
+    remainingRef.current = interval;
+    clearAutoplayTimer();
     setPaused(true);
     setDragging(true);
     setDragOffset(0);
@@ -70,6 +96,7 @@ move_button = false,
       setTransitioning(true);
       setIndex((i) => Math.min(Math.max(i + stepCount, 0), maxIndex + 1));
     }
+    remainingRef.current = interval;
     setPaused(false);
   };
 
@@ -127,32 +154,29 @@ move_button = false,
 
   useEffect(() => {
     if (!canSlide) return undefined;
-    let timeoutId;
-    const tick = () => {
-      setTransitioning(true);
-      setIndex((i) => (i >= perView + realCount - 1 ? perView + realCount : i + 1));
-      remainingRef.current = interval;
-      lastTickRef.current = Date.now();
-      timeoutId = setTimeout(tick, interval);
-    };
     if (paused) {
+      clearAutoplayTimer();
       remainingRef.current = Math.max(0, remainingRef.current - (Date.now() - lastTickRef.current));
-    } else {
-      lastTickRef.current = Date.now();
-      timeoutId = setTimeout(tick, remainingRef.current);
+      return clearAutoplayTimer;
     }
-    return () => clearTimeout(timeoutId);
-  }, [paused, canSlide, perView, realCount, interval]);
+    remainingRef.current = interval;
+    startAutoplay(interval);
+    return clearAutoplayTimer;
+  }, [paused, canSlide, perView, realCount, interval, startAutoplay]);
 
   const goTo = (dotIndex) => {
     setTransitioning(true);
     setIndex(cloneCount + dotIndex);
+    remainingRef.current = interval;
+    startAutoplay(interval);
   };
 
   const moveBy = (amount) => {
     if (!canSlide) return;
     setTransitioning(true);
     setIndex((currentIndex) => Math.min(Math.max(currentIndex + amount, 0), maxIndex + 1));
+    remainingRef.current = interval;
+    startAutoplay(interval);
   };
 
   const step = 100 / perView;
@@ -181,7 +205,10 @@ move_button = false,
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        style={dragging ? { cursor: 'grabbing', userSelect: 'none' } : undefined}
+        style={{
+          position: 'relative',
+          ...(dragging ? { cursor: 'grabbing', userSelect: 'none' } : {}),
+        }}
       >
         <div className="owl-stage">
           {slides.map((item, i) => (
@@ -190,10 +217,13 @@ move_button = false,
             </div>
           ))}
         </div>
-      </div>
-      {canSlide && move_button && (
-        <>
-          <div className="owl-nav">
+        {canSlide && move_button && (
+          <div
+            className="owl-nav"
+            onPointerDownCapture={(e) => e.stopPropagation()}
+            onMouseDownCapture={(e) => e.stopPropagation()}
+            onTouchStartCapture={(e) => e.stopPropagation()}
+          >
             <button
               type="button"
               className="owl-prev"
@@ -211,20 +241,28 @@ move_button = false,
               <i aria-hidden="true" className="bx bx-chevron-right"></i>
             </button>
           </div>
-          <div className="owl-dots">
-            {items.map((_, i) => (
-              <button
-                type="button"
-                key={i}
-                className={`owl-dot${i === activeDot ? ' active' : ''}`}
-                onClick={() => goTo(i)}
-                aria-label={`Go to slide ${i + 1}`}
-              >
-                <span></span>
-              </button>
-            ))}
-          </div>
-        </>
+        )}
+      </div>
+      {canSlide && move_button && (
+        <div
+          className="owl-dots"
+          style={{ marginTop: '18px' }}
+          onPointerDownCapture={(e) => e.stopPropagation()}
+          onMouseDownCapture={(e) => e.stopPropagation()}
+          onTouchStartCapture={(e) => e.stopPropagation()}
+        >
+          {items.map((_, i) => (
+            <button
+              type="button"
+              key={i}
+              className={`owl-dot${i === activeDot ? ' active' : ''}`}
+              onClick={() => goTo(i)}
+              aria-label={`Go to slide ${i + 1}`}
+            >
+              <span></span>
+            </button>
+          ))}
+        </div>
       )}
     </div>
   );
