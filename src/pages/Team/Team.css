@@ -754,3 +754,7 @@ img {
   background: none;
   cursor: pointer;
 }
+
+.team-profile-modal {
+  max-width: min(900px, calc(100vw - 2rem));
+}

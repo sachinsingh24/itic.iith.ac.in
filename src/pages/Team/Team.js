@@ -365,7 +365,11 @@ const Team = () => {
         </div>
       </section>
 
-      <Modal show={profile !== null} onHide={closeProfile}>
+      <Modal
+        dialogClassName="team-profile-modal"
+        show={profile !== null}
+        onHide={closeProfile}
+      >
         <Modal.Header closeButton />
         <Modal.Body style={{ textAlign: 'left' }}>
           <h4>{profile && profile.name}</h4>
