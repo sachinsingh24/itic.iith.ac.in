@@ -34,9 +34,7 @@
 .overview-content h3 {
   font-size: 25px;
 }
-.overview-content p {
-  margin: 0;
-}
+
 
 @media only screen and (max-width: 767px) {
   .faq-accordion h2 {
@@ -677,16 +675,7 @@ img {
   height: auto;
 }
 
-p {
-  color: #4a6f8a;
-  margin-bottom: 12px;
-  line-height: 1.8;
-  font-size: 15px;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
+ 
 
 [hidden] {
   display: none;
@@ -697,21 +686,9 @@ p:last-child {
   height: 100%;
 }
 
-body {
-  font-size: 14px;
-}
+ 
 
-p {
-  font-size: 14px;
-}
-
-body {
-  font-size: 14px;
-}
-
-p {
-  font-size: 14px;
-}
+ 
 .faq-accordion .accordion .accordion-item {
   border: 0;
 }

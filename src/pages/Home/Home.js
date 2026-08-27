@@ -3,11 +3,28 @@ import _asset1 from "../../assets/img/map1.png";
 import _asset2 from "../../assets/img/shape/7.png";
 import _asset3 from "../../assets/img/shape/8.png";
 import _asset4 from "../../assets/img/shape/9.png";
-import imgGallery1 from "../../assets/img/IMG_8.webp";
-import imgGallery2 from "../../assets/img/IMG_18.webp";
-import imgGallery3 from "../../assets/img/IMG_12.webp";
-import imgGallery4 from "../../assets/img/Homepageimg1.jpg";
-import imgGallery5 from "../../assets/img/Homepageimg2.jpg";
+import carouselImage1 from "../../assets/img/carousel images/1.jpg";
+import carouselImage2 from "../../assets/img/carousel images/2.jpg";
+import carouselImage3 from "../../assets/img/carousel images/3.jpg";
+import carouselImage4 from "../../assets/img/carousel images/4.jpg";
+import carouselImage5 from "../../assets/img/carousel images/5.jpg";
+import carouselImage6 from "../../assets/img/carousel images/6.jpg";
+import carouselImage7 from "../../assets/img/carousel images/8.jpg";
+import carouselImage8 from "../../assets/img/carousel images/9.jpg";
+import carouselImage9 from "../../assets/img/carousel images/12.jpg";
+import carouselImage10 from "../../assets/img/carousel images/DSC_1089.jpg";
+import carouselImage11 from "../../assets/img/carousel images/IMG-20230531-WA0056.jpg";
+import carouselImage12 from "../../assets/img/carousel images/IMG3419.jpg";
+import carouselImage13 from "../../assets/img/carousel images/IMG3795.jpg";
+import carouselImage14 from "../../assets/img/carousel images/IMG_0487.jpg";
+import carouselImage15 from "../../assets/img/carousel images/IMG_0776.jpg";
+import carouselImage16 from "../../assets/img/carousel images/IMG_1829.jpg";
+import carouselImage17 from "../../assets/img/carousel images/IMG_3030.jpg";
+import carouselImage18 from "../../assets/img/carousel images/IMG_8872.jpg";
+import carouselImage19 from "../../assets/img/carousel images/LIJ00749 (1).jpg";
+import carouselImage20 from "../../assets/img/carousel images/My project-1 (4).png";
+import carouselImage21 from "../../assets/img/carousel images/PRO03991.jpg";
+import carouselImage22 from "../../assets/img/carousel images/RG0A5036.jpg";
 import facCoWorking from "../../assets/img/itic-icons/Facilities/Co-working Space.png";
 import facFinancialAid from "../../assets/img/itic-icons/Facilities/Financial Aid.png";
 import facIpSupport from "../../assets/img/itic-icons/Facilities/Ip support.png";
@@ -69,7 +86,30 @@ const focusAreas = [
   { img: faChipDesign, title: "Chip Design" },
 ];
 
-const galleryImages = [imgGallery1, imgGallery2, imgGallery3, imgGallery4, imgGallery5];
+const galleryImages = [
+  carouselImage1,
+  carouselImage2,
+  carouselImage3,
+  carouselImage4,
+  carouselImage5,
+  carouselImage6,
+  carouselImage7,
+  carouselImage8,
+  carouselImage9,
+  carouselImage10,
+  carouselImage11,
+  carouselImage12,
+  carouselImage13,
+  carouselImage14,
+  carouselImage15,
+  carouselImage16,
+  carouselImage17,
+  carouselImage18,
+  carouselImage19,
+  carouselImage20,
+  carouselImage21,
+  carouselImage22,
+];
 
 const testimonials = [
   {
@@ -212,7 +252,7 @@ const Home = () => {
                 items={galleryImages}
                 renderItem={(src) => (
                   <div className="item">
-                    <img className="img-fluid" src={src} alt="gallery" />
+                    <img className="img-fluid" src={src} alt="gallery" loading="lazy" decoding="async" />
                   </div>
                 )}
                 interval={2000}

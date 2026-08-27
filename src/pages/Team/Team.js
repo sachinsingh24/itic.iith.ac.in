@@ -18,15 +18,24 @@ import ShapeDecoration from '../../components/ShapeDecoration';
 const profiles = {
   teamDean: {
     name: 'Prof. Arabinda Haldar',
-    bio: [],
+    bio: [
+      'Prof. Arabinda Haldar is a Professor of Physics at IIT Hyderabad specializing in magnonics, spintronics, and nanomagnetic devices. Holding a dual M.Sc.-Ph.D. from IIT Bombay and postdoctoral experience from NUS and Colorado State University, he actively supports the iTIC ecosystem as Dean (Innovation Translation & Startups) and by mentoring deep-tech and hardware startups in advanced materials and sensor innovation.',
+    ],
   },
   team9: {
     name: 'Dr. Vishnu R Unni',
-    bio: [],
+    bio: [
+      'Dr. Vishnu R. Unni is an Assistant Professor in the Department of Mechanical & Aerospace Engineering at IIT Hyderabad. He holds a Ph.D. from IIT Madras, and his research primarily focuses on reactive fluid dynamics, thermoacoustics, turbulence, and dynamical systems.',
+      'Beyond his academic and research contributions, Dr. Unni actively engages in the capacity of Faculty In Charge - iTIC with the campus ecosystem, supporting innovation, incubation, and deep-tech startup initiatives. At iTIC Incubator, he brings technical expertise to evaluate, mentor, and guide early-stage startups working in aerospace, mechanical systems, thermal engineering, and deep-tech innovation.',
+    ],
   },
   team2: {
     name: 'Dr. Gunjan Mehta',
-    bio: [],
+    bio: [
+      'Dr. Gunjan Mehta is an Associate Professor in the Department of Biotechnology at IIT Hyderabad. He completed his Ph.D. at IIT Bombay and previously served as a Postdoctoral Fellow at the National Cancer Institute, National Institutes of Health (NIH), USA. He is also a recipient of the prestigious Har Gobind Khorana-Innovative Young Biotechnologist Award from the Department of Biotechnology (DBT), Government of India.',
+      'His primary research focuses on chromosome dynamics, single-molecule bio-imaging, transcription regulation, and developing advanced optics and photonics technologies for biomedical applications.',
+      'At iTIC Incubator, Dr. Mehta leverages his expertise in biotechnology and advanced bio-instrumentation to evaluate, mentor, and guide early-stage healthcare and deep-tech startups.',
+    ],
   },
   teamCOO: {
     name: 'Keyur Punjani',
