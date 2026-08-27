@@ -122,7 +122,7 @@ const Team = () => {
                 <div className="col-lg-9 col-md-9 col-sm-9">
                   <h4>Prof. Arabinda Haldar</h4>
                   <h6 style={{ color: '#f9a33f' }}>
-                    Prof, Department of Physics, IIT Hyderabad
+                    Vice President, iTIC Incubator
                   </h6>
                   <hr />
                 </div>
@@ -175,7 +175,7 @@ const Team = () => {
                 </div>
                 <div className="col-lg-9 col-md-9 col-sm-9">
                   <h4>Dr. Gunjan Mehta</h4>
-                  <h6 style={{ color: '#f9a33f' }}>Treasurer, iTIC Incubato</h6>
+                  <h6 style={{ color: '#f9a33f' }}>Treasurer, iTIC Incubator</h6>
                   <hr />
                 </div>
               </div>

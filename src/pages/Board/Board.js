@@ -39,7 +39,7 @@ const Board = () => {
                 <div className="col-lg-9 col-md-9 col-sm-9">
                   <h4>Prof. Murty B. S.</h4>
 
-                  <h6 style={{ color: '#F9A33F' }}>President</h6>
+                  <h6 style={{ color: '#F9A33F' }}>President, iTIC Incubator</h6>
 
                   <hr />Director, IIT Hyderabad
                 </div>
@@ -65,7 +65,7 @@ const Board = () => {
                 <div className="col-lg-9 col-md-9 col-sm-9">
                   <h4>Prof. Arabinda Haldar</h4>
 
-                  <h6 style={{ color: '#F9A33F' }}>Vice President</h6>
+                  <h6 style={{ color: '#F9A33F' }}>Vice President, iTIC Incubator</h6>
 
                   <hr />Prof, Department of Physics, IIT Hyderabad
                 </div>
@@ -89,7 +89,7 @@ const Board = () => {
                 </div>
                 <div className="col-lg-9 col-md-9 col-sm-9">
                   <h4>Dr. Gunjan Mehta</h4>
-                  <h6 style={{ color: '#F9A33F' }}>Treasurer</h6>
+                  <h6 style={{ color: '#F9A33F' }}>Treasurer, iTIC Incubator</h6>
                   <hr />Associate Professor, Biotechnology, IIT Hyderabad
                 </div>
               </div>
@@ -114,7 +114,7 @@ const Board = () => {
                 <div className="col-lg-9 col-md-9 col-sm-9">
                   <h4>Dr. Vishnu R Unni</h4>
 
-                  <h6 style={{ color: '#F9A33F' }}>General Secretary</h6>
+                  <h6 style={{ color: '#F9A33F' }}>General Secretary, iTIC Incubator</h6>
 
                   <hr />Assistant Professor, Mechanical &amp; Aerospace
                   Engineering, IIT Hyderabad.
