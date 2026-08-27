@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     <>
       <PageTitle title="Privacy Policy" />
 
-      <div className="service-details pt-30 pb-30">
+      <div className="service-details pt-4 pt-30 pb-30">
         <div className="container">
           <div className="col-lg-12 col-12">
             <h2 className="section-heading">PRIVACY POLICY</h2>

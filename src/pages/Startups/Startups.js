@@ -96,7 +96,7 @@ const Startups = () => {
     <>
       <PageTitle title="Startups" bg={_asset0} />
 
-      <section className="about-area">
+      <section className="about-area pt-4">
         <div className="container">
           <div className="row">
             {startupEntries.map(([slug, startup]) => (

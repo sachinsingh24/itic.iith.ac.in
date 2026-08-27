@@ -212,7 +212,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="page-section bg-f4f6fc">
+      <section className="page-section bg-f4f6fc pt-4">
         <div className="container max-width-1290">
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">

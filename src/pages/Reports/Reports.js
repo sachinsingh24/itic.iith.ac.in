@@ -16,7 +16,7 @@ const Reports = () => {
         extraStyle={{ backgroundPosition: 'bottom' }}
       />
 
-      <section className="blog-area">
+      <section className="blog-area pt-4">
         <div className="container">
           <DownloadGrid items={reports} />
         </div>

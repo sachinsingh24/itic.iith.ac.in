@@ -46,7 +46,7 @@ const ContactUs = () => {
         extraStyle={{ backgroundPosition: 'bottom' }}
       />
 
-      <section className="contact-area">
+      <section className="contact-area pt-4">
         <div className="container">
           <div className="contact-inner">
             <div className="row">

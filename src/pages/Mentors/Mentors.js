@@ -26,7 +26,7 @@ const Mentors = () => {
     <>
       <PageTitle title="Mentors" bg={_asset0} titleColor="#f9a33f" />
 
-      <section className="team-area">
+      <section className="team-area pt-4">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6">

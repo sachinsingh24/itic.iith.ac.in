@@ -16,7 +16,7 @@ const IdexDio = () => {
         bg={_asset0}
       />
 
-      <section className="about-area">
+      <section className="about-area pt-4">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">

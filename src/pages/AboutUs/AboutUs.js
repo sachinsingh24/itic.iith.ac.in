@@ -11,7 +11,7 @@ const AboutUs = () => {
     <>
       <PageTitle title="About us" bg={_asset0} />
 
-      <div className="service-details pt-30 pb-30">
+      <div className="service-details pt-4 pt-30 pb-30">
         <div className="container">
           <div className="service-details-content">
             <div id="what-we-do" style={{ width: '100%', height: '180px', marginTop: '-180px' }}></div>

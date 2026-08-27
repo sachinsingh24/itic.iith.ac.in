@@ -19,7 +19,7 @@ const Board = () => {
     <>
       <PageTitle title="Board" bg={_asset0} titleColor="#ee4132" />
 
-      <section className="team-area">
+      <section className="team-area pt-4">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-6">

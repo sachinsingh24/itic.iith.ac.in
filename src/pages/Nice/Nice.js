@@ -14,7 +14,7 @@ const Nice = () => {
     <>
       <PageTitle title="NICE" subtitle="Unlocking the power of DEEPTECH" bg={_asset0} extraStyle={{ backgroundPosition: "bottom" }} />
 
-      <section className="about-area">
+      <section className="about-area pt-4">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">

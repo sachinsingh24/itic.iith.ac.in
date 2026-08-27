@@ -9,7 +9,7 @@ const Eeiith = () => {
     <>
       <PageTitle title="Entrepreneurship Ecosystem at IITH" bg={_asset0} />
 
-      <section className="page-section">
+      <section className="page-section pt-4">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">

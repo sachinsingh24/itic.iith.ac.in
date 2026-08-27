@@ -10,7 +10,7 @@ const Apply = () => {
     <>
       <PageTitle title="Apply for Support" />
 
-      <section className="blog-area">
+      <section className="blog-area pt-4">
         <div className="container">
           <div className="row">
             <div className="col-12">
