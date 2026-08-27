@@ -12,6 +12,7 @@ const LoopCarousel = ({
   margin = 15,
   interval = 2000,
   speed = 0.8,
+move_button = false,
 }) => {
   const getPerView = () => {
     if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
@@ -190,7 +191,7 @@ const LoopCarousel = ({
           ))}
         </div>
       </div>
-      {canSlide && (
+      {canSlide && move_button && (
         <>
           <div className="owl-nav">
             <button

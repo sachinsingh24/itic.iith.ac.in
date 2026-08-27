@@ -55,7 +55,7 @@ import "odometer/themes/odometer-theme-default.css";
 import "particles.js";
 import LoopCarousel from "../../components/LoopCarousel";
 import "./Home.css";
-
+import ShapeDecoration from '../../components/ShapeDecoration';
 const facilities = [
   { img: facCoWorking, title: "Co-working Space" },
   { img: facFinancialAid, title: "Financial Aid" },
@@ -86,30 +86,7 @@ const focusAreas = [
   { img: faChipDesign, title: "Chip Design" },
 ];
 
-const galleryImages = [
-  carouselImage1,
-  carouselImage2,
-  carouselImage3,
-  carouselImage4,
-  carouselImage5,
-  carouselImage6,
-  carouselImage7,
-  carouselImage8,
-  carouselImage9,
-  carouselImage10,
-  carouselImage11,
-  carouselImage12,
-  carouselImage13,
-  carouselImage14,
-  carouselImage15,
-  carouselImage16,
-  carouselImage17,
-  carouselImage18,
-  carouselImage19,
-  carouselImage20,
-  carouselImage21,
-  carouselImage22,
-];
+const galleryImages = [carouselImage1, carouselImage2, carouselImage3, carouselImage4, carouselImage5, carouselImage6, carouselImage7, carouselImage8, carouselImage9, carouselImage10, carouselImage11, carouselImage12, carouselImage13, carouselImage14, carouselImage15, carouselImage16, carouselImage17, carouselImage18, carouselImage19, carouselImage20, carouselImage21, carouselImage22];
 
 const testimonials = [
   {
@@ -263,6 +240,7 @@ const Home = () => {
                 desktopItems={1}
                 tabletMin={768}
                 desktopMin={1200}
+                move_button={true}
               />
             </div>
           </div>
@@ -387,6 +365,7 @@ const Home = () => {
           />
         </div>
       </section>
+      <ShapeDecoration />
     </>
   );
 };

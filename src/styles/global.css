@@ -170,25 +170,25 @@ p {
   position: absolute;
   right: 30%;
   bottom: 25%;
-  z-index: -1;
+  z-index: 0;
 }
 .shape11 {
   position: absolute;
   left: 25%;
   bottom: 27%;
-  z-index: -1;
+  z-index: 0;
 }
 .shape12 {
   position: absolute;
   left: 10%;
   bottom: 50%;
-  z-index: -1;
+  z-index: 0;
 }
 .shape13 {
   position: absolute;
   right: 18%;
   bottom: 60%;
-  z-index: -1;
+  z-index: 0;
 }
 .shape10 img,
 .shape12 img,
@@ -199,6 +199,19 @@ p {
 .shape11 img {
   -webkit-animation: moveBounce 5s linear infinite;
   animation: moveBounce 5s linear infinite;
+}
+
+@media only screen and (min-width: 1200px) {
+  .free-trial-area {
+    display: block;
+    overflow: visible;
+  }
+  .shape10,
+  .shape11,
+  .shape12,
+  .shape13 {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
