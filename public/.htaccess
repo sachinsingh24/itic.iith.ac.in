@@ -1,19 +1,16 @@
+
 <IfModule mod_rewrite.c>
-  RewriteEngine On
+    RewriteEngine On
 
-  # Serve existing files and directories normally; send every other request
-  # to the React single-page application entry point.
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^ - [L]
+    # Do not rewrite existing files or directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
 
-  # Redirect legacy React URLs such as /about-us.html to /about-us.
-  # Use a temporary redirect while testing; change 302 to 301 when confirmed.
-  RewriteRule ^(.+)\.html$ /$1 [R=302,L]
+    # Redirect old .html URLs to clean URLs
+    RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+    RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
 
-  RewriteRule ^ index.html [L]
+    # React SPA fallback
+    RewriteRule ^ index.html [L]
 </IfModule>
-
-<!-- <Directory /var/www/html>
-    AllowOverride All
-</Directory> -->
